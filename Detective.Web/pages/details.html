@@ -1,0 +1,335 @@
+<html>
+
+<head>
+	<title>Blackcheck - Profile</title>
+	<style>
+		.wide-card.mdl-card {
+			color: #fff;
+			width: 100%;
+		}
+		
+		.wide-card > .mdl-card__title {
+			color: #fff;
+			height: 256px;
+			background: url('images/detective_male.png') center / cover;
+		}
+		
+		.wide-card.mdl-card__menu {
+			left: 16px;
+			right: 0px;
+		}
+		
+		.wide-card.bordertop {
+			border-top: 1px solid rgba(0, 0, 0, .1);
+		}
+		
+		.wide-card.borderbottom {
+			border-bottom: 1px solid rgba(0, 0, 0, .1);
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+
+
+
+	<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--1-col"></div>
+		<div class="mdl-cell mdl-cell--10-col">
+
+			<div class="wide-card mdl-card mdl-shadow--2dp">
+				
+				<div class="mdl-card__title" ng-style="{'background-image':'url('+profileImage+')'}">
+					<h2 class="mdl-card__title-text" >{{result.SearchItems[0].Fullname}}</h2>
+				</div>
+				
+				<div class="mdl-card__supporting-text">
+					You can examine detailed information about this person.
+				</div>
+				
+				<div class="mdl-card__actions wide-card bordertop borderbottom">
+					<a href ng-click="OnGeneralClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">General</a>
+					<a href ng-click="OnAddressClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Address</a>
+					<a href ng-click="OnAkaClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">A.K.A.</a>
+					<a href ng-click="OnCitizenshipClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Citizenship</a>
+					<a href ng-click="OnDateOfBirthClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Birthday</a>
+					<a href ng-click="OnIDClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Identity</a>
+					<a href ng-click="OnNationalityClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Nationality</a>
+					<a href ng-click="OnPlaceOfBirthClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Place of Birth</a>
+					<a href ng-click="OnProgramClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Program</a>
+					<a href ng-click="OnVesselInfoClick()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Vessel Info</a>
+				</div>
+				
+				<div class="wide-card mdl-card__menu">
+					<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="window.history.back()">
+						<i class="material-icons">arrow_back</i>
+					</button>
+				</div>
+				
+				<div class="mdl-card__supporting-text">
+					<div ng-show="showGeneral">
+						<ul class="mdl-list">
+							<li class="mdl-list__item mdl-list__item--three-line" ng-show="result.SearchItems[0].SDN.first_name">
+								<span class="mdl-list__item-primary-content">
+								<span>Name</span>
+								<span class="mdl-list__item-text-body">{{result.SearchItems[0].SDN.first_name}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line" ng-show="result.SearchItems[0].SDN.last_name">
+								<span class="mdl-list__item-primary-content">
+								<span>Surname</span>
+								<span class="mdl-list__item-text-body">{{result.SearchItems[0].SDN.last_name}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line" ng-show="result.SearchItems[0].SDN.sdn_type">
+								<span class="mdl-list__item-primary-content">
+								<span>Type</span>
+								<span class="mdl-list__item-text-body">{{result.SearchItems[0].SDN.sdn_type}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line" ng-show="result.SearchItems[0].SDN.title">
+								<span class="mdl-list__item-primary-content">
+								<span>Title</span>
+								<span class="mdl-list__item-text-body">{{result.SearchItems[0].SDN.title}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showAddress">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.AddressList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.address1">
+								<span class="mdl-list__item-primary-content">
+									<span>Address 1</span>
+								<span class="mdl-list__item-text-body">{{item.address1}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.address2">
+								<span class="mdl-list__item-primary-content">
+									<span>Address 2</span>
+								<span class="mdl-list__item-text-body">{{item.address2}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.address3">
+								<span class="mdl-list__item-primary-content">
+									<span>Address 3</span>
+								<span class="mdl-list__item-text-body">{{item.address3}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.city">
+								<span class="mdl-list__item-primary-content">
+									<span>City</span>
+								<span class="mdl-list__item-text-body">{{item.city}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.country">
+								<span class="mdl-list__item-primary-content">
+									<span>Country</span>
+								<span class="mdl-list__item-text-body">{{item.country}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.postal_code">
+								<span class="mdl-list__item-primary-content">
+									<span>Postal Code</span>
+								<span class="mdl-list__item-text-body">{{item.postal_code}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.state_or_province">
+								<span class="mdl-list__item-primary-content">
+									<span>State or Province</span>
+								<span class="mdl-list__item-text-body">{{item.state_or_province}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showAka">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.AkaList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.first_name">
+								<span class="mdl-list__item-primary-content">
+									<span>Name</span>
+								<span class="mdl-list__item-text-body">{{item.first_name}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.last_name">
+								<span class="mdl-list__item-primary-content">
+									<span>Surname</span>
+								<span class="mdl-list__item-text-body">{{item.last_name}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.category">
+								<span class="mdl-list__item-primary-content">
+									<span>Category</span>
+								<span class="mdl-list__item-text-body">{{item.category}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.type">
+								<span class="mdl-list__item-primary-content">
+									<span>Type</span>
+								<span class="mdl-list__item-text-body">{{item.type}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showCitizenship">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.CitizenshipList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.country">
+								<span class="mdl-list__item-primary-content">
+									<span>Country</span>
+								<span class="mdl-list__item-text-body">{{item.country}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.main_entry">
+								<span class="mdl-list__item-primary-content">
+									<span>Main Entry</span>
+								<span class="mdl-list__item-text-body">{{item.main_entry}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showDateOfBirth">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.DateOfBirthList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.date_of_birth">
+								<span class="mdl-list__item-primary-content">
+									<span>Date of Birth</span>
+								<span class="mdl-list__item-text-body">{{item.date_of_birth}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.main_entry">
+								<span class="mdl-list__item-primary-content">
+									<span>Main Entry</span>
+								<span class="mdl-list__item-text-body">{{item.main_entry}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showID">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.IDList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.id_type">
+								<span class="mdl-list__item-primary-content">
+									<span>ID Type</span>
+								<span class="mdl-list__item-text-body">{{item.id_type}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.id_number">
+								<span class="mdl-list__item-primary-content">
+									<span>ID Number</span>
+								<span class="mdl-list__item-text-body">{{item.id_number}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.id_country">
+								<span class="mdl-list__item-primary-content">
+									<span>ID Country</span>
+								<span class="mdl-list__item-text-body">{{item.id_country}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.issue_date">
+								<span class="mdl-list__item-primary-content">
+									<span>Issue Date</span>
+								<span class="mdl-list__item-text-body">{{item.issue_date}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.expiration_date">
+								<span class="mdl-list__item-primary-content">
+									<span>Expiration Date</span>
+								<span class="mdl-list__item-text-body">{{item.expiration_date}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showNationality">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.NationalityList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.country">
+								<span class="mdl-list__item-primary-content">
+									<span>Country</span>
+								<span class="mdl-list__item-text-body">{{item.country}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.main_entry">
+								<span class="mdl-list__item-primary-content">
+									<span>Main Entry</span>
+								<span class="mdl-list__item-text-body">{{item.main_entry}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showPlaceOfBirth">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.PlaceOfBirthList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.place_of_birth">
+								<span class="mdl-list__item-primary-content">
+									<span>Place of Birth</span>
+								<span class="mdl-list__item-text-body">{{item.place_of_birth}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.main_entry">
+								<span class="mdl-list__item-primary-content">
+									<span>Main Entry</span>
+								<span class="mdl-list__item-text-body">{{item.main_entry}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showProgram">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.ProgramList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.program">
+								<span class="mdl-list__item-primary-content">
+									<span>Program</span>
+								<span class="mdl-list__item-text-body">{{item.program}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<div ng-show="showVesselInfo">
+						<ul class="mdl-list wide-card borderbottom" ng-repeat="item in result.SearchItems[0].SDN.VesselInfoList">
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.call_sign">
+								<span class="mdl-list__item-primary-content">
+									<span>Call Sign</span>
+								<span class="mdl-list__item-text-body">{{item.call_sign}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.vessel_type">
+								<span class="mdl-list__item-primary-content">
+									<span>Vessel Type</span>
+								<span class="mdl-list__item-text-body">{{item.vessel_type}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.vessel_flag">
+								<span class="mdl-list__item-primary-content">
+									<span>Vessel Flag</span>
+								<span class="mdl-list__item-text-body">{{item.vessel_flag}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.vessel_owner">
+								<span class="mdl-list__item-primary-content">
+									<span>Vessel Owner</span>
+								<span class="mdl-list__item-text-body">{{item.vessel_owner}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.tonnage">
+								<span class="mdl-list__item-primary-content">
+									<span>Tonnage</span>
+								<span class="mdl-list__item-text-body">{{item.tonnage}}</span>
+								</span>
+							</li>
+							<li class="mdl-list__item mdl-list__item--three-line mdl-card--border" ng-show="item.gross_registered_tonnage">
+								<span class="mdl-list__item-primary-content">
+									<span>Gross Registered Tonnage</span>
+								<span class="mdl-list__item-text-body">{{item.gross_registered_tonnage}}</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="mdl-cell mdl-cell--1-col"></div>
+	</div>
+
+
+	<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</body>
+
+</html>

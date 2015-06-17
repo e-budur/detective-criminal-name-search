@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Index", "Detective.Index\Detective.Index.csproj", "{AA2CA242-B5AF-434C-B52D-4F61E07CEF4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.DataModel", "Detective.DataModel\Detective.DataModel.csproj", "{C60B1FD6-6DE6-496F-969F-502CC9FEF6F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Feeder", "Detective.Feeder\Detective.Feeder.csproj", "{CCF11541-F428-4F3F-A50C-40F7E395C273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Web", "Detective.Web\Detective.Web.csproj", "{65EEA5B8-435C-473E-B239-49337F993EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Web.Tests", "Detective.Web.Tests\Detective.Web.Tests.csproj", "{9E34A7AD-4B4F-4909-A781-F1EDDE27349D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Api", "Detective.Api\Detective.Api.csproj", "{8DDBE3EA-3EDA-4004-A987-7007EC42D8B0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Detective.Setup", "Detective.Setup\Detective.Setup.vdproj", "{AB6DE1BE-FC00-474B-A93F-454817D396F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Test.Playground", "Detective.Test.Playground\Detective.Test.Playground.csproj", "{A2D22561-8E88-4E58-BA2A-44FC6029C080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Data", "Detective.Data\Detective.Data.csproj", "{CA23AEF7-4AF7-4228-B8FB-79B96B050C0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Search", "Detective.Search\Detective.Search.csproj", "{151F5571-9290-4927-931A-8476E7DBDD40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Commons", "Detective.Commons\Detective.Commons.csproj", "{8CD23BB6-657A-494F-AE8D-D43883B75757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Noodle", "Detective.Noodle\Detective.Noodle.csproj", "{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA2CA242-B5AF-434C-B52D-4F61E07CEF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2CA242-B5AF-434C-B52D-4F61E07CEF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2CA242-B5AF-434C-B52D-4F61E07CEF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2CA242-B5AF-434C-B52D-4F61E07CEF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60B1FD6-6DE6-496F-969F-502CC9FEF6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60B1FD6-6DE6-496F-969F-502CC9FEF6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60B1FD6-6DE6-496F-969F-502CC9FEF6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60B1FD6-6DE6-496F-969F-502CC9FEF6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65EEA5B8-435C-473E-B239-49337F993EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65EEA5B8-435C-473E-B239-49337F993EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65EEA5B8-435C-473E-B239-49337F993EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65EEA5B8-435C-473E-B239-49337F993EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E34A7AD-4B4F-4909-A781-F1EDDE27349D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E34A7AD-4B4F-4909-A781-F1EDDE27349D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E34A7AD-4B4F-4909-A781-F1EDDE27349D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E34A7AD-4B4F-4909-A781-F1EDDE27349D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDBE3EA-3EDA-4004-A987-7007EC42D8B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDBE3EA-3EDA-4004-A987-7007EC42D8B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDBE3EA-3EDA-4004-A987-7007EC42D8B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDBE3EA-3EDA-4004-A987-7007EC42D8B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB6DE1BE-FC00-474B-A93F-454817D396F3}.Debug|Any CPU.ActiveCfg = Debug
+		{AB6DE1BE-FC00-474B-A93F-454817D396F3}.Release|Any CPU.ActiveCfg = Release
+		{A2D22561-8E88-4E58-BA2A-44FC6029C080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D22561-8E88-4E58-BA2A-44FC6029C080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D22561-8E88-4E58-BA2A-44FC6029C080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D22561-8E88-4E58-BA2A-44FC6029C080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA23AEF7-4AF7-4228-B8FB-79B96B050C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA23AEF7-4AF7-4228-B8FB-79B96B050C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA23AEF7-4AF7-4228-B8FB-79B96B050C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA23AEF7-4AF7-4228-B8FB-79B96B050C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151F5571-9290-4927-931A-8476E7DBDD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151F5571-9290-4927-931A-8476E7DBDD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151F5571-9290-4927-931A-8476E7DBDD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151F5571-9290-4927-931A-8476E7DBDD40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 13
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ionovus.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Detective.Index\\Detective.Index.csproj
+		SccProjectName1 = Detective.Index
+		SccLocalPath1 = Detective.Index
+		SccProjectUniqueName2 = Detective.DataModel\\Detective.DataModel.csproj
+		SccProjectName2 = Detective.DataModel
+		SccLocalPath2 = Detective.DataModel
+		SccProjectUniqueName3 = Detective.Feeder\\Detective.Feeder.csproj
+		SccProjectName3 = Detective.Feeder
+		SccLocalPath3 = Detective.Feeder
+		SccProjectUniqueName4 = Detective.Web\\Detective.Web.csproj
+		SccProjectName4 = Detective.Web
+		SccLocalPath4 = Detective.Web
+		SccProjectUniqueName5 = Detective.Web.Tests\\Detective.Web.Tests.csproj
+		SccProjectName5 = Detective.Web.Tests
+		SccLocalPath5 = Detective.Web.Tests
+		SccProjectUniqueName6 = Detective.Api\\Detective.Api.csproj
+		SccProjectName6 = Detective.Api
+		SccLocalPath6 = Detective.Api
+		SccProjectUniqueName7 = Detective.Setup\\Detective.Setup.vdproj
+		SccProjectName7 = Detective.Setup
+		SccLocalPath7 = Detective.Setup
+		SccProjectUniqueName8 = Detective.Test.Playground\\Detective.Test.Playground.csproj
+		SccProjectName8 = Detective.Test.Playground
+		SccLocalPath8 = Detective.Test.Playground
+		SccProjectUniqueName9 = Detective.Data\\Detective.Data.csproj
+		SccProjectName9 = Detective.Data
+		SccLocalPath9 = Detective.Data
+		SccProjectUniqueName10 = Detective.Search\\Detective.Search.csproj
+		SccProjectName10 = Detective.Search
+		SccLocalPath10 = Detective.Search
+		SccProjectUniqueName11 = Detective.Commons\\Detective.Commons.csproj
+		SccProjectName11 = Detective.Commons
+		SccLocalPath11 = Detective.Commons
+		SccProjectUniqueName12 = Detective.Noodle\\Detective.Noodle.csproj
+		SccProjectName12 = Detective.Noodle
+		SccLocalPath12 = Detective.Noodle
+	EndGlobalSection
+EndGlobal

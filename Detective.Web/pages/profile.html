@@ -1,0 +1,192 @@
+  <div class="wide-card mdl-card__menu">
+					<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick="window.history.back()">
+						<i class="material-icons">arrow_back</i>
+					</button>
+		</div>
+  
+  <div id="w">
+
+    <div id="content" class="clearfix">
+      <div id="userphoto"><img ng-src="{{profileImage}}" height="104px" width="104px"></div>
+      <h1>{{result.SearchItems[0].Fullname}}</h1>
+    
+      <nav id="profiletabs">
+        <ul class="clearfix">
+          <li><a ng-click="OnBioClick()" ng-class="{'sel' : showBio}">About</a></li>
+          <!--li><a ng-click="OnProgramsClick()" ng-class="{'sel' : showPrograms}">Programs</a></li-->
+          <li><a ng-click="OnLinksClick()" ng-class="{'sel' : showLinks}">Relations</a></li>
+        </ul>
+      </nav>
+      
+      <section id="bio" ng-show="showBio">
+        <p>The details of the profile</p>
+        
+        
+        <div ng-show="result.SearchItems[0].SDN.AkaList.length>0">
+          <p class="setting">
+              <span><i class="fa fa-comments-o"></i> A.k.a </span> 
+              (Bullet list of alternatives names here)
+              
+          </p>
+        </div>
+        
+        <div ng-show="result.SearchItems[0].SDN.remarks != ''">
+          <p class="setting">
+              <span><i class="fa fa-pencil"></i> Remarks </span> 
+              {{result.SearchItems[0].SDN.remarks}}
+          </p>
+        </div>
+        
+        <div ng-show="result.SearchItems[0].SDN.DateOfBirthItemList.length>0">
+          <p class="setting">
+            <span><i class="fa fa-birthday-cake"></i> Date of birth </span> 
+             {{result.SearchItems[0].SDN.DateOfBirthItemList[0].date_of_birth}}
+          </p>
+        </div>
+        
+        <div ng-show="result.SearchItems[0].SDN.PlaceOfBirthList.length>0">
+          <p class="setting">
+            <span><i class="fa fa-map-marker"></i> Place of birth </span> 
+             <a target="_blank" ng-href="http://maps.google.com/?q={{result.SearchItems[0].SDN.PlaceOfBirthList[0].place_of_birth}}">{{result.SearchItems[0].SDN.PlaceOfBirthList[0].place_of_birth}}</a>
+          </p>
+        </div>
+        
+        
+        
+        <div ng-show="result.SearchItems[0].SDN.NationalityList.length>0">
+          <p class="setting">
+            <span><i class="fa fa-globe"></i> Nationality </span> 
+             <a target="_blank" ng-href="http://maps.google.com/?q={{result.SearchItems[0].SDN.NationalityList[0].country}}">{{result.SearchItems[0].SDN.NationalityList[0].country}}</a>
+          </p>
+        </div>
+        
+        <div ng-show="result.SearchItems[0].SDN.AddressList.length>0">
+          <p class="setting">
+            <span><i class="fa fa-map-marker"></i> Address </span> 
+             <a target="_blank" ng-href="http://maps.google.com/?q={{result.SearchItems[0].SDN.AddressList[0].address1}} {{result.SearchItems[0].SDN.AddressList[0].city}} {{result.SearchItems[0].SDN.AddressList[0].country}}">
+            {{result.SearchItems[0].SDN.AddressList[0].address1}} 
+            {{result.SearchItems[0].SDN.AddressList[0].city}} 
+            {{result.SearchItems[0].SDN.AddressList[0].country}}</a>
+          </p>
+        </div>
+          
+          <div ng-show="result.SearchItems[0].SDN.ProgramList.length>0">
+          <p class="setting">
+            <span><i class="fa fa-university"></i> Program </span> 
+             {{result.SearchItems[0].SDN.ProgramList[0].program}}
+          </p>
+        </div>
+      </section>
+      
+      <section id="programs"  ng-show="showPrograms">
+        <p>List of affiliated programs</p>
+          <p class="setting"/>
+        
+        <ul id="friendslist" class="clearfix">
+          <li ng-repeat="program in result.SearchItems[0].SDN.ProgramList">
+            <!--a href="#"-->
+              <i class="fa fa-university"></i> {{program.program}}
+              <!--/a--></li>
+        </ul>
+      </section>
+      
+      <section id="links" ng-show="showLinks">
+        <p>List of affiliated entities</p>
+        <p class="setting"/>
+        
+        <ul id="friendslist" class="clearfix">
+          <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           <li>
+            <a ng-href="/#/profile/7843">
+              <img src="images/detective_male.png" width="22" height="22"> Saddam Hussein
+              </a>
+           </li>
+           
+           
+        </ul>
+        
+        <!--
+          IDList arkadas listesi degilmis. Pasaport no, kimlik no gibi id bilgilerinin listesiymis.
+          DB de arkadas listesine dair bilgi bulunmuyor.  Parse edilirken atlanmis olmali.
+          
+          ul id="friendslist" class="clearfix">
+          <li ng-repeat="entity in result.SearchItems[0].SDN.IDList">
+            <a ng-href="/#/profile/{{entity.uid}}">
+              <img src="images/detective_male.png" width="22" height="22"> {{entity.FullName}}
+              </a></li>
+        </ul-->
+      </section>
+      
+      <section id="settings" class="hidden">
+        <p>Edit your user settings:</p>
+        
+        <p class="setting"><span>E-mail Address <img src="images/edit.png" alt="*Edit*"></span> lolno@gmail.com</p>
+        
+        <p class="setting"><span>Language <img src="images/edit.png" alt="*Edit*"></span> English(US)</p>
+        
+        <p class="setting"><span>Profile Status <img src="images/edit.png" alt="*Edit*"></span> Public</p>
+        
+        <p class="setting"><span>Update Frequency <img src="images/edit.png" alt="*Edit*"></span> Weekly</p>
+        
+        <p class="setting"><span>Connected Accounts <img src="images/edit.png" alt="*Edit*"></span> None</p>
+      </section>
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  $('#profiletabs ul li a').on('click', function(e){
+    e.preventDefault();
+    var newcontent = $(this).attr('href');
+    
+    $('#profiletabs ul li a').removeClass('sel');
+    $(this).addClass('sel');
+    
+    $('#content section').each(function(){
+      if(!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
+    });
+    
+    $(newcontent).removeClass('hidden');
+  });
+});
+</script>

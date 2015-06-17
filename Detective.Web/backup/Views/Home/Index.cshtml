@@ -1,0 +1,7 @@
+﻿@model Detective.Noodle.Models.Search
+
+@using (Html.BeginForm("Action", "Home", FormMethod.Post, new { Class = "gsc-input" }))
+{
+    @Html.TextBoxFor(model => model.KeyValue, new { Class = "gsc-input" })
+    <input type="submit" class="gsc-search-button" value="Search" />
+}

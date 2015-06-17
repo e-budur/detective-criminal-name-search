@@ -1,0 +1,110 @@
+﻿@model Detective.Noodle.Models.Search
+
+
+<div>
+    <div style="border:0px; display:inline-block;">
+        <img src="~/Content/Images/n0l.gif" style="height:30px" border="0" />
+        <img src="~/Content/Images/o1.gif" style="height:30px" border="0" />
+        <img src="~/Content/Images/o2.gif" style="height:30px" border="0" />
+        <img src="~/Content/Images/d3.gif" style="height:30px" border="0" />
+        <img src="~/Content/Images/l0.gif" style="height:30px" border="0" />
+        <img src="~/Content/Images/e1.gif" style="height:30px" border="0" />
+    </div>
+    <div style="border:0px; display:inline-block;">
+        @using (Html.BeginForm("Action", "Home", FormMethod.Post))
+        {
+            @Html.TextBoxFor(model => model.KeyValue, new { Class = "gsc-input" })
+            <input type="submit" class="gsc-search-button" value="Search" />
+        }
+    </div>
+</div>
+
+
+<div style="padding-left: 85px;">
+    <div style="width: 450px;">
+        <div class="gsc-control-cse gsc-control-cse-en">
+            <div class="gsc-control-wrapper-cse" dir="ltr">
+                @if (@Model.QueryResult.SearchItemCount > 0)
+                {
+                    <div class="gsc-results-wrapper-nooverlay gsc-results-wrapper-visible">
+                        <div class="gsc-above-wrapper-area">
+                            <table class="gsc-above-wrapper-area-container" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="gsc-result-info-container">
+                                            <div class="gsc-result-info" id="Div1">About @Model.QueryResult.AllNameCount results (@Model.QueryResult.SearchTime)</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="gsc-wrapper">
+                            <div class="gsc-resultsbox-visible">
+                                <div class="gsc-resultsRoot gsc-tabData gsc-tabdActive">
+                                    <div class="gsc-results gsc-webResult" style="display: block;">
+                                        <div class="gsc-expansionArea">
+                                            @foreach (var items in Model.QueryResult.SearchItems)
+                                            {
+                                                <div class="gsc-webResult gsc-result">
+                                                    <div class="gs-webResult gs-result">
+                                                        <table class="gsc-table-result">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="gsc-table-cell-snippet-close" onclick="if (this.className == 'gsc-table-cell-snippet-close gsc-collapsable') { this.className = 'gsc-table-cell-snippet-open gsc-collapsable'; } else if (this.className == 'gsc-table-cell-snippet-open gsc-collapsable') { this.className = 'gsc-table-cell-snippet-close gsc-collapsable'; };">
+                                                                        <div class="gs-title gsc-table-cell-thumbnail gsc-thumbnail-left"><a class="gs-title" dir="ltr" href=@("http://blackcheck.net/Detective.Api/details/"+@items.Uid) target="_blank" data-cturl=@("http://blackcheck.net/Detective.Api/details/"+@items.Uid) data-ctorig=@("http://blackcheck.net/Detective.Api/details/"+@items.Uid)><b>@items.Fullname</b><b>..</b></a></div>
+                                                                        <div><span></span></div>
+                                                                        <div class="gs-bidi-start-align gs-snippet" dir="ltr">
+                                                                            <b>UID: @items.Uid</b>&nbsp;
+                                                                            <b>SCORE: @items.Score</b>&nbsp;
+                                                                        </div>
+                                                                        <div class="gsc-url-bottom">
+                                                                            <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-short" dir="ltr">google.com</div>
+                                                                            <div class="gs-bidi-start-align gs-visibleUrl gs-visibleUrl-long" style="-ms-word-break: break-all;" dir="ltr">google.com/.../<b>@items.Fullname Detay Bilgiler</b></div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div class="gsc-cursor-box gs-bidi-start-align" dir="ltr">
+                                                <div class="gsc-cursor">
+                                                    <div tabindex="0" class="gsc-cursor-page gsc-cursor-current-page">1</div>
+                                                    @for (int i = 2; i < @Model.QueryResult.SearchItems.Length / 10; i++)
+                                                    {
+                                                        <div tabindex="0" class="gsc-cursor-page">@i</div>
+                                                    }
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gcsc-branding">
+                                            <table class="gcsc-branding" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gcsc-branding-text">
+                                                            <div class="gcsc-branding-text">powered by</div>
+                                                        </td>
+                                                        <td class="gcsc-branding-img-noclear">
+                                                            <a class="gcsc-branding-clickable" href="http://cse.google.com/cse/?hl=en" target="_BLANK">
+                                                                <img class="gcsc-branding-img-noclear" src="http://www.google.com/uds/css/small-logo.png">
+                                                            </a>
+                                                        </td>
+                                                        <td class="gcsc-branding-text gcsc-branding-text-name">
+                                                            <div class="gcsc-branding-text gcsc-branding-text-name">Custom Search</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
