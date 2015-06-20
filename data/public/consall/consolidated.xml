@@ -1,0 +1,4411 @@
+<?xml version="1.0" standalone="yes"?>
+<sdnList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://tempuri.org/sdnList.xsd">
+  <publshInformation>
+    <Publish_Date>12/17/2014</Publish_Date>
+    <Record_Count>115</Record_Count>
+  </publshInformation>
+  <sdnEntry>
+    <uid>9639</uid>
+    <firstName>Ismail Abdul Salah</firstName>
+    <lastName>HANIYA</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9150</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HANIYA</lastName>
+        <firstName>Ismail</firstName>
+      </aka>
+      <aka>
+        <uid>9151</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HANIYYA</lastName>
+        <firstName>Ismaeel</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4696</uid>
+        <dateOfBirth>1962</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4697</uid>
+        <placeOfBirth>Shati</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9640</uid>
+    <firstName>Mohammed</firstName>
+    <lastName>ABU TEIR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9152</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU TAIR</lastName>
+        <firstName>Mohammed Mahmud</firstName>
+      </aka>
+      <aka>
+        <uid>9153</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABOU TAYR</lastName>
+        <firstName>Mohammad Mahmoud</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4698</uid>
+        <dateOfBirth>1951</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4699</uid>
+        <placeOfBirth>Umm Tuba</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9641</uid>
+    <firstName>Jamileh Abdullah</firstName>
+    <lastName>AL-SHANTI</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9154</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>EL-SHANTI</lastName>
+        <firstName>Jameela Abdallah</firstName>
+      </aka>
+      <aka>
+        <uid>9155</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL SHANTEE</lastName>
+        <firstName>Jamila Abed Allah</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12128</uid>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4700</uid>
+        <dateOfBirth>1955</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4701</uid>
+        <placeOfBirth>Jabalia Camp</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9642</uid>
+    <firstName>Mohammed Jamal</firstName>
+    <lastName>NU'MAN ALAEDDIN</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9156</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ALA AL DIN</lastName>
+        <firstName>Mohamad Nouman</firstName>
+      </aka>
+      <aka>
+        <uid>9157</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL NATSHEH</lastName>
+        <firstName>Mohammed</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12129</uid>
+        <city>Hebron</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4702</uid>
+        <dateOfBirth>1959</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9643</uid>
+    <firstName>Yasser Daoud</firstName>
+    <lastName>MANSOUR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4703</uid>
+        <dateOfBirth>1967</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4704</uid>
+        <placeOfBirth>Nablus, West Bank</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9644</uid>
+    <firstName>Khalil Musa</firstName>
+    <lastName>RABAI</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9158</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RABBAI</lastName>
+        <firstName>Khalil Mussa</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4705</uid>
+        <dateOfBirth>1959</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9645</uid>
+    <firstName>Huda Naim</firstName>
+    <lastName>AL-QREINAWI</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9159</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL QRENAWI</lastName>
+        <firstName>Houda Naim</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12130</uid>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4706</uid>
+        <dateOfBirth>1969</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9646</uid>
+    <firstName>Mahmoud Ahmad</firstName>
+    <lastName>AL-RAMAHI</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12131</uid>
+        <city>Ramallah</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4707</uid>
+        <dateOfBirth>1963</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9647</uid>
+    <firstName>Mahmoud Khaled</firstName>
+    <lastName>ZAHHAR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9160</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL ZAHAR</lastName>
+        <firstName>Mahmoud Khaled</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4708</uid>
+        <dateOfBirth>1945</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9648</uid>
+    <firstName>Abdul Fattah</firstName>
+    <lastName>HASAN DUKHAN</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9161</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HASAN DOUKHAN</lastName>
+        <firstName>Abdul Fattah</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4709</uid>
+        <dateOfBirth>1936</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9649</uid>
+    <firstName>Ibrahim Mohammed</firstName>
+    <lastName>DAHBOUR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12132</uid>
+        <city>Jenin</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4710</uid>
+        <dateOfBirth>1968</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9650</uid>
+    <firstName>Mariam Mahmoud</firstName>
+    <lastName>SALEH</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12133</uid>
+        <city>Ramallah</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4711</uid>
+        <dateOfBirth>1952</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9651</uid>
+    <firstName>Fathi Mohammed</firstName>
+    <lastName>QAR'AWI</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9162</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>QARAWI</lastName>
+        <firstName>Mohammed Fathi</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12134</uid>
+        <city>Tulkarim</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4712</uid>
+        <dateOfBirth>1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4713</uid>
+        <placeOfBirth>Ramin, West Bank</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9652</uid>
+    <firstName>Anwar Mohammed</firstName>
+    <lastName>ZBOUN</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9163</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-ZBOUN</lastName>
+        <firstName>Anwar Muhammad</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12135</uid>
+        <city>Bethlehem</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4714</uid>
+        <dateOfBirth>1968</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4715</uid>
+        <placeOfBirth>Ilar</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9653</uid>
+    <firstName>Imad Mahmoud</firstName>
+    <lastName>NOFAL</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9164</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NAWFAL</lastName>
+        <firstName>Imad Mahmoud</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12136</uid>
+        <city>Qalqilya</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4716</uid>
+        <dateOfBirth>1970</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9654</uid>
+    <firstName>Omar Mahmoud</firstName>
+    <lastName>MATAR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12137</uid>
+        <city>Salfit</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4717</uid>
+        <dateOfBirth>1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9655</uid>
+    <firstName>Muna Salim Saleh</firstName>
+    <lastName>MANSOUR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9165</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>MANSOUR</lastName>
+        <firstName>Muna Salem</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12138</uid>
+        <city>Nablus</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4718</uid>
+        <dateOfBirth>1961</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9656</uid>
+    <firstName>Yahia Abdul Aziz</firstName>
+    <lastName>AL-ABADSAH</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9166</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>EL ABADSA</lastName>
+        <firstName>Yehia Abdul Aziz</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12139</uid>
+        <city>Khan Younis</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4719</uid>
+        <dateOfBirth>1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9657</uid>
+    <firstName>Mohammed Maher Yousef</firstName>
+    <lastName>BADER</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12140</uid>
+        <city>Hebron</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4720</uid>
+        <dateOfBirth>1956</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9658</uid>
+    <firstName>Ayman Hussein</firstName>
+    <lastName>DARAGHMEH</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12141</uid>
+        <city>Tubas</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4721</uid>
+        <dateOfBirth>1963</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9659</uid>
+    <firstName>Fathi Ahmad</firstName>
+    <lastName>HAMMAD</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4722</uid>
+        <dateOfBirth>1961</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9660</uid>
+    <firstName>Mariam Mohammed</firstName>
+    <lastName>FARHAT</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12142</uid>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4723</uid>
+        <dateOfBirth>1949</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9661</uid>
+    <firstName>Sayyed Salem</firstName>
+    <lastName>ABU MSAMEH</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9167</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU MUSAMEH</lastName>
+        <firstName>Sayed Salem</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12143</uid>
+        <city>Rafah</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4724</uid>
+        <dateOfBirth>1948</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9662</uid>
+    <firstName>Marwan Mohammed</firstName>
+    <lastName>ABU RAS</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9168</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABOU RAAS</lastName>
+        <firstName>Merwan Muhammed</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12144</uid>
+        <city>Gaza City</city>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4725</uid>
+        <dateOfBirth>1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9663</uid>
+    <firstName>Samira Abdullah</firstName>
+    <lastName>HALAYQAH</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9169</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HALAYQA</lastName>
+        <firstName>Sameera Abed Allah</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12145</uid>
+        <city>Hebron</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4726</uid>
+        <dateOfBirth>1964</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9664</uid>
+    <firstName>Jamal Ismail</firstName>
+    <lastName>ISKEIK</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12146</uid>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4727</uid>
+        <dateOfBirth>1964</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9665</uid>
+    <firstName>Ali Salim</firstName>
+    <lastName>ROUMANIN</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12147</uid>
+        <city>Oja</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4728</uid>
+        <dateOfBirth>1971</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9666</uid>
+    <firstName>Ahmad Yousef</firstName>
+    <lastName>ABU HALABIYYE</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12148</uid>
+        <city>Gaza City</city>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4729</uid>
+        <dateOfBirth>1952</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9667</uid>
+    <firstName>Abdul Jaber Mustafa</firstName>
+    <lastName>FUQAHA</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>12149</uid>
+        <city>Ramallah</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4730</uid>
+        <dateOfBirth>1966</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9668</uid>
+    <firstName>Aziz</firstName>
+    <lastName>DWEIK</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9170</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>DWAIK</lastName>
+        <firstName>Aziz Salem Mustada</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4731</uid>
+        <dateOfBirth>1948</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4732</uid>
+        <placeOfBirth>Al-Khalil, Hebron</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9669</uid>
+    <firstName>Azzam</firstName>
+    <lastName>SALHAB</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9171</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SALHAB</lastName>
+        <firstName>Azzam Numan Rahman</firstName>
+      </aka>
+      <aka>
+        <uid>9172</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SALHAB TAMIMI</lastName>
+        <firstName>Azzam No'man Abdel Rahman</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4733</uid>
+        <dateOfBirth>1956</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9670</uid>
+    <firstName>Nizar</firstName>
+    <lastName>RAMADAN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9173</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RAMADAN</lastName>
+        <firstName>Nizar Abd-Al-Aziz</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4734</uid>
+        <dateOfBirth>1960</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9671</uid>
+    <firstName>Nayef</firstName>
+    <lastName>RJOUB</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9174</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RAJOUB</lastName>
+        <firstName>Naif Mahmod</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4735</uid>
+        <dateOfBirth>1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4736</uid>
+        <placeOfBirth>Dura, West Bank</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9672</uid>
+    <firstName>Samir</firstName>
+    <lastName>AL-QADI</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9175</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-QADI</lastName>
+        <firstName>Sameer Saleh</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4737</uid>
+        <dateOfBirth>1956</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9673</uid>
+    <firstName>Mohammed</firstName>
+    <lastName>ABU JHEISHEH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9176</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU JHESHEH</lastName>
+        <firstName>Mohammad Mutlaq</firstName>
+      </aka>
+      <aka>
+        <uid>9177</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU JEHEISHA</lastName>
+        <firstName>Mohammed</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4738</uid>
+        <dateOfBirth>1955</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4739</uid>
+        <placeOfBirth>Izna, Hebron</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9674</uid>
+    <firstName>Hatem</firstName>
+    <lastName>QFEISHEH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9178</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>KAFEESHEH</lastName>
+        <firstName>Hatem Rabah</firstName>
+      </aka>
+      <aka>
+        <uid>9179</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>QEFEISHA</lastName>
+        <firstName>Hatem</firstName>
+      </aka>
+      <aka>
+        <uid>9180</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU ANED</lastName>
+        <firstName>Hadj Hatem</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4740</uid>
+        <dateOfBirth>1960</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9675</uid>
+    <firstName>Basem</firstName>
+    <lastName>ZA'ARIR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9181</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ZAAREER</lastName>
+        <firstName>Basim Ahmad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4741</uid>
+        <dateOfBirth>1962</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9676</uid>
+    <firstName>Mohammed</firstName>
+    <lastName>AL-TAL</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9182</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-TAL</lastName>
+        <firstName>Mohammad Ismail</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4742</uid>
+        <dateOfBirth>1965</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9677</uid>
+    <firstName>Daoud</firstName>
+    <lastName>ABU SEIR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Hebron</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9183</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU SAIR</lastName>
+        <firstName>Da'oud Kamal Da'oud</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4743</uid>
+        <dateOfBirth>1955</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9678</uid>
+    <firstName>Hamid Jabir</firstName>
+    <lastName>KHUDAIR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Nablus</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9184</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>KHUDAIR</lastName>
+        <firstName>Hamid Sulieman Jabir</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4744</uid>
+        <dateOfBirth>1944</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9679</uid>
+    <firstName>Husni Bourini</firstName>
+    <lastName>YASIN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Nablus</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9185</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>YASIN</lastName>
+        <firstName>Husni Mohammad Bourini</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4745</uid>
+        <dateOfBirth>1955</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9680</uid>
+    <firstName>Riyad Ali</firstName>
+    <lastName>AMLI</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Nablus</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9186</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AMLI</lastName>
+        <firstName>Riyad Ali Mustafa</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4746</uid>
+        <dateOfBirth>1961</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9681</uid>
+    <firstName>Ahmad Ali</firstName>
+    <lastName>AHMAD</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Nablus</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9187</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AHMAD</lastName>
+        <firstName>Ahmad Ali Ahmad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4747</uid>
+        <dateOfBirth>1940</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9682</uid>
+    <firstName>Hasan</firstName>
+    <lastName>YOUSEF</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Ramallah</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9188</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>DAR KHALIL</lastName>
+        <firstName>Hasan Youssef Daoud</firstName>
+      </aka>
+      <aka>
+        <uid>9189</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>DAR KHALIL</lastName>
+        <firstName>Hassan Yousef Dawoud</firstName>
+      </aka>
+    </akaList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9683</uid>
+    <firstName>Fadel</firstName>
+    <lastName>HAMDAN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Ramallah</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9190</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HAMDAN</lastName>
+        <firstName>Fadel Mohammad Saleh</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4748</uid>
+        <dateOfBirth>1953</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4749</uid>
+        <placeOfBirth>Ramallah, West Bank</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9684</uid>
+    <firstName>Mahmoud</firstName>
+    <lastName>MUSLEH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Ramallah</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9191</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>MUSLEH</lastName>
+        <firstName>Mahmoud Ibrahim Mahmoud</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4750</uid>
+        <dateOfBirth>1941</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4751</uid>
+        <placeOfBirth>Haifa, Israel</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9685</uid>
+    <firstName>Ahmad 'Abd al-Aziz</firstName>
+    <lastName>MUBARAK</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Ramallah</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9192</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>MUBARAK</lastName>
+        <firstName>Ahmad Abdel Aziz Saleh</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4752</uid>
+        <dateOfBirth>1962</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9686</uid>
+    <firstName>Khaled Tafish</firstName>
+    <lastName>THWEIB</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Bethlehem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9193</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>THOUAIB</lastName>
+        <firstName>Khaled Ibrahim Tafish</firstName>
+      </aka>
+      <aka>
+        <uid>9194</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>DWEIB</lastName>
+        <firstName>Khaled Tafesh</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4753</uid>
+        <dateOfBirth>1964</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4754</uid>
+        <placeOfBirth>Bethlehem</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9687</uid>
+    <firstName>Mahmoud</firstName>
+    <lastName>AL-KHATIB</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Bethlehem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9195</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-KHATIB</lastName>
+        <firstName>Mahmoud Daoud Mahmoud</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4755</uid>
+        <dateOfBirth>1972</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9688</uid>
+    <firstName>Khaled Abed</firstName>
+    <lastName>YAHIA</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Jenin</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9196</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>YEHIA</lastName>
+        <firstName>Khaled Said</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12150</uid>
+        <city>Jenin</city>
+        <stateOrProvince>West Bank</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4756</uid>
+        <dateOfBirth>1959</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9689</uid>
+    <firstName>Khaled</firstName>
+    <lastName>ABU HASSAN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Jenin</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9197</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABOU HASSAN</lastName>
+        <firstName>Khaled Suleiman Fayez</firstName>
+      </aka>
+      <aka>
+        <uid>9198</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU HASAN</lastName>
+        <firstName>Khalid Sulayman Fayiz</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4757</uid>
+        <dateOfBirth>1967</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9690</uid>
+    <firstName>Abdul Rahman Fahmi</firstName>
+    <lastName>ZEIDAN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Tulkarem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9199</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ZEIDAN</lastName>
+        <firstName>Abdel Rahman Fahmi Rahman</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4758</uid>
+        <dateOfBirth>1960</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9691</uid>
+    <firstName>Riyad</firstName>
+    <lastName>RADDAD</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Tulkarem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9200</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RADAD</lastName>
+        <firstName>Riyad Mahmoud Sa'eed</firstName>
+      </aka>
+      <aka>
+        <uid>9201</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-SEDAWI</lastName>
+        <firstName>Riyad Radad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4759</uid>
+        <dateOfBirth>1960</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9692</uid>
+    <firstName>Ahmad</firstName>
+    <lastName>ATTOUN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Jerusalem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9202</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ATTOUN</lastName>
+        <firstName>Ahmad Mohammad Ahmad</firstName>
+      </aka>
+      <aka>
+        <uid>9203</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ATOON</lastName>
+        <firstName>Ahmed Muhamad Ahmed</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4760</uid>
+        <dateOfBirth>1968</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9693</uid>
+    <firstName>Ibrahim</firstName>
+    <lastName>ABU SALEM</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Jerusalem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9204</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABOU SALEM</lastName>
+        <firstName>Ibrahim Said Hasan</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4761</uid>
+        <dateOfBirth>1948</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9694</uid>
+    <firstName>Mohammed Saleh</firstName>
+    <lastName>TUTAH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Jerusalem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9205</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>TAWTAH</lastName>
+        <firstName>Mohammad Omran Saleh</firstName>
+      </aka>
+      <aka>
+        <uid>9206</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>TAWTA</lastName>
+        <firstName>Muhamed Umran Salih</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4762</uid>
+        <dateOfBirth>1969</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9695</uid>
+    <firstName>Wael</firstName>
+    <lastName>AL-HUSSEINI</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Jerusalem</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9207</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABDUL RAHMAN</lastName>
+        <firstName>Wael Muhammed</firstName>
+      </aka>
+      <aka>
+        <uid>9208</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABED AL RAHMAAN</lastName>
+        <firstName>Wael Mohamad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4763</uid>
+        <dateOfBirth>1962</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9696</uid>
+    <firstName>Naser</firstName>
+    <lastName>ABDUL JAWAD</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Salfit</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9209</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABDEL JAWAD</lastName>
+        <firstName>Nasir Abdullah Odeh</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4764</uid>
+        <dateOfBirth>1965</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9697</uid>
+    <firstName>Khaled</firstName>
+    <lastName>ABU TOS</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Toubas</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9210</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ABU QOUS</lastName>
+        <firstName>Khalid Hamad Hamid</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4765</uid>
+        <dateOfBirth>1949</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4766</uid>
+        <placeOfBirth>Tulkarem, West Bank</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9698</uid>
+    <firstName>Khamis</firstName>
+    <lastName>NAJJAR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Khan Younis</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9211</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NAJJAR</lastName>
+        <firstName>Khamis Jawdat Khamis</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4767</uid>
+        <dateOfBirth>1949</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4768</uid>
+        <placeOfBirth>Khan Younis</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9699</uid>
+    <firstName>Salah</firstName>
+    <lastName>AL-BARDAWIL</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Khan Younis</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9212</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>EL BARDAWIL</lastName>
+        <firstName>Salah Mohammad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4769</uid>
+        <dateOfBirth>1959</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4770</uid>
+        <placeOfBirth>Khan Younis</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9700</uid>
+    <firstName>Younes</firstName>
+    <lastName>AL-ASTAL</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Khan Younis</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9213</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>EL-ASTAL</lastName>
+        <firstName>Younis Mohe-eldeen Fayez</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4771</uid>
+        <dateOfBirth>1956</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4772</uid>
+        <placeOfBirth>Khan Younis</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9701</uid>
+    <firstName>Abdul Rahman</firstName>
+    <lastName>AL-JAMAL</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Der al-Balah</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9214</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-JAMAL</lastName>
+        <firstName>Abdel Al-Rahman Yusef</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4773</uid>
+        <dateOfBirth>1961</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9702</uid>
+    <firstName>Salem</firstName>
+    <lastName>SALAMEH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Der al-Balah</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9215</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SALAMEH</lastName>
+        <firstName>Salem Ahmad Abdel Hadi</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4774</uid>
+        <dateOfBirth>1951</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9703</uid>
+    <firstName>Saeed</firstName>
+    <lastName>SIAM</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9216</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SEYAM</lastName>
+        <firstName>Said Mohammad</firstName>
+      </aka>
+      <aka>
+        <uid>9217</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SIYAM</lastName>
+        <firstName>Saeed Mohammad</firstName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>12151</uid>
+        <stateOrProvince>Gaza</stateOrProvince>
+        <country>Palestinian</country>
+      </address>
+    </addressList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4775</uid>
+        <dateOfBirth>1959</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9704</uid>
+    <firstName>Ahmad</firstName>
+    <lastName>BAHAR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9218</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BAHAR</lastName>
+        <firstName>Ahmed Mohamed</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4776</uid>
+        <dateOfBirth>1949</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4777</uid>
+        <placeOfBirth>Gaza</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9705</uid>
+    <firstName>Jamal</firstName>
+    <lastName>SALEH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9219</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NASSER</lastName>
+        <firstName>Jamal Talab Mohammad Saleh</firstName>
+      </aka>
+      <aka>
+        <uid>9220</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SALEH</lastName>
+        <firstName>Jamal Talab</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4778</uid>
+        <dateOfBirth>1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>4779</uid>
+        <placeOfBirth>Gaza</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9706</uid>
+    <firstName>Khalil</firstName>
+    <lastName>AL-HAYYEH</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9221</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ELHYYA</lastName>
+        <firstName>Khalil Esmaeel</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4780</uid>
+        <dateOfBirth>1960</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9707</uid>
+    <firstName>Mohammed Faraj</firstName>
+    <lastName>AL-GHOUL</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9222</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ELGHOUL</lastName>
+        <firstName>Mohammad Faraj Mahmood</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4781</uid>
+        <dateOfBirth>1957</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9708</uid>
+    <firstName>Mushir</firstName>
+    <lastName>AL-HABAL</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Northern Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9223</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ELHABEL</lastName>
+        <firstName>Moshir Omar</firstName>
+      </aka>
+      <aka>
+        <uid>9224</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>EL-MASRI</lastName>
+        <firstName>Moshir</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4782</uid>
+        <dateOfBirth>1978</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9709</uid>
+    <firstName>Atef</firstName>
+    <lastName>UDWAN</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Northern Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9225</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ADWAN</lastName>
+        <firstName>Atef Ibrahim</firstName>
+      </aka>
+      <aka>
+        <uid>9226</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>IDWAN</lastName>
+        <firstName>Atef Ibrahim Mohammad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4783</uid>
+        <dateOfBirth>1952</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9710</uid>
+    <firstName>Yousef</firstName>
+    <lastName>AL-SHARAFI</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Northern Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9227</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-SHRAFI</lastName>
+        <firstName>Yousef Awad</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4784</uid>
+        <dateOfBirth>1963</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9711</uid>
+    <firstName>Ismail</firstName>
+    <lastName>AL-ASHQAR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Northern Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9228</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AL-ALASHQAR</lastName>
+        <firstName>Ismail Abdallatif</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4785</uid>
+        <dateOfBirth>1962</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9712</uid>
+    <firstName>Mohammed</firstName>
+    <lastName>SHIHAB</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>HAMAS - Northern Gaza</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>9229</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SHEHAB</lastName>
+        <firstName>Mohamed Abed Hadi Rahman</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>4786</uid>
+        <dateOfBirth>1956</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9713</uid>
+    <firstName>Ahmad</firstName>
+    <lastName>SA'DAT</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>PFLP</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9714</uid>
+    <firstName>Jamil</firstName>
+    <lastName>MAJDALAWI</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>PFLP</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9715</uid>
+    <firstName>Khaledah</firstName>
+    <lastName>JARRAR</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>PFLP</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>9716</uid>
+    <firstName>Qais Abdul</firstName>
+    <lastName>KARIM</lastName>
+    <sdnType>Individual</sdnType>
+    <remarks>DFLP</remarks>
+    <programList>
+      <program>NS-PLC</program>
+    </programList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>13042</uid>
+    <lastName>KUO OIL (S) PTE. LIMITED</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>Telephone: 6563184677; Fax: 6562243040; United States financial institutions are prohibited from making loans or providing credits totaling more than $10,000,000 in any 12-month period to the person listed here unless such person is engaged in activities to relieve human suffering and the loans or credits are provided for such activities</remarks>
+    <programList>
+      <program>NS-ISA</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>20782</uid>
+        <address1>200 Cantonment Road</address1>
+        <address2>#15-00 Southpoint</address2>
+        <city>Singapore</city>
+        <postalCode>089763</postalCode>
+        <country>Singapore</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>13043</uid>
+    <lastName>FAL OIL COMPANY LTD.</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>Telephone: 97165029999; Telephone: 97165280861; Telephone: 97165286666; Telephone: 97165283334; Telephone: 97165283323; Telephone: 97165022234; Telephone: 97165029999; Telephone: 97165029804; Telephone: 97165029914; Telephone: 97165029824; Telephone: 97165281737; Telephone: 97165029814; Telephone: 97165029825; Telephone: 97165029840; Telephone: 97165029863; Telephone: 97165029842; Telephone: 97165029819; Telephone: 97165029836; Telephone: 97168029939; Fax: 97165281437; Fax: 97165280861; United States financial institutions are prohibited from making loans or providing credits totaling more than $10,000,000 in any 12-month period to the person listed here unless such person is engaged in activities to relieve human suffering and the loans or credits are provided for such activities</remarks>
+    <programList>
+      <program>NS-ISA</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>20784</uid>
+        <address1>Sultan Al Awal Street (Sheikh Sultan Bin Awal Road)</address1>
+        <address2>Near Mina Sea Port, Near Mina Khalid Road</address2>
+        <address3>Al Khan Area</address3>
+        <city>Sharjah</city>
+        <stateOrProvince>Sharjah</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>13044</uid>
+    <lastName>ZHUHAI ZHENRONG COMPANY</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>Telephone: 861052925900; Fax: 861052025900; United States financial institutions are prohibited from making loans or providing credits totaling more than $10,000,000 in any 12-month period to the person listed here unless such person is engaged in activities to relieve human suffering and the loans or credits are provided for such activities</remarks>
+    <programList>
+      <program>NS-ISA</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>20786</uid>
+        <address1>Zhenrong Building, 121, DaTunli</address1>
+        <address2>Chaoyang District</address2>
+        <city>Beijing</city>
+        <postalCode>100108</postalCode>
+        <country>China</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>15268</uid>
+    <lastName>BANK OF KUNLUN CO LTD</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>United States financial institutions are prohibited from opening or maintaining a correspondent account or a payable-through account for the foreign financial institution listed here, pursuant to 31 C.F.R. section 561.201(c)</remarks>
+    <programList>
+      <program>561List</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>111843</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>CKLB CN BJ</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>22509</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>KARAMAY URBAN CREDIT COOPERATIVES</lastName>
+      </aka>
+      <aka>
+        <uid>22510</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>KARAMAY CITY COMMERCIAL BANK CO LTD.</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>22761</uid>
+        <address1>172 Xibin Rd</address1>
+        <address2>Ranghulu District</address2>
+        <address3>(Daqing, Heilongjiang Branch)</address3>
+        <city>Daqing</city>
+        <postalCode>163453</postalCode>
+        <country>China</country>
+      </address>
+      <address>
+        <uid>22762</uid>
+        <address1>9 Dongzhimen North Street</address1>
+        <address2>Dongcheng District</address2>
+        <address3>(Head Office)</address3>
+        <city>Beijing</city>
+        <postalCode>100007</postalCode>
+        <country>China</country>
+      </address>
+      <address>
+        <uid>22763</uid>
+        <address1>No. 7 Century Ave</address1>
+        <address3>(Registered Office)</address3>
+        <city>Xinjiang</city>
+        <stateOrProvince>Karamay</stateOrProvince>
+        <postalCode>834000</postalCode>
+        <country>China</country>
+      </address>
+      <address>
+        <uid>22764</uid>
+        <address1>No. 68 Zhongya South Rd</address1>
+        <address2>Economic and Technological Development Zone</address2>
+        <address3>(Urumqi, Xinjiang Branch)</address3>
+        <city>Urumqi</city>
+        <postalCode>830026</postalCode>
+        <country>China</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>15987</uid>
+    <lastName>FERLAND COMPANY LIMITED</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>(Linked To: NATIONAL IRANIAN TANKER COMPANY)</remarks>
+    <programList>
+      <program>FSE-IR</program>
+      <program>ISA</program>
+      <program>EO13645</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>114827</uid>
+        <idType>Executive Order 13645 Determination -</idType>
+        <idNumber>Material Support</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>23962</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>FERLAND CO. LTD</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>24030</uid>
+        <address1>29 A Anna Komnini St.</address1>
+        <address2>PO Box 2303</address2>
+        <city>Nicosia</city>
+        <country>Cyprus</country>
+      </address>
+      <address>
+        <uid>24049</uid>
+        <address1>5/7 Sabaneyev Most.</address1>
+        <city>Odessa</city>
+        <country>Ukraine</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16422</uid>
+    <firstName>Vitaly</firstName>
+    <lastName>SOKOLENKO</lastName>
+    <title>General Manager of Ferland Company Limited</title>
+    <sdnType>Individual</sdnType>
+    <remarks>(Linked To: FERLAND COMPANY LIMITED)</remarks>
+    <programList>
+      <program>EO13645</program>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9026</uid>
+        <idType>Passport</idType>
+        <idNumber>EH354160</idNumber>
+      </id>
+      <id>
+        <uid>9027</uid>
+        <idType>Passport</idType>
+        <idNumber>P0329907</idNumber>
+      </id>
+      <id>
+        <uid>114826</uid>
+        <idType>Executive Order 13645 Determination -</idType>
+        <idNumber>Material Support</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>24750</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SOKOLENKO</lastName>
+        <firstName>Vitalii</firstName>
+      </aka>
+      <aka>
+        <uid>24751</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SOKOLENKO</lastName>
+        <firstName>Vitaliy</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>14774</uid>
+        <dateOfBirth>16 Jun 1968</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16530</uid>
+    <firstName>Pourya</firstName>
+    <lastName>NAYEBI</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9126</uid>
+        <idType>Passport</idType>
+        <idNumber>V11664675</idNumber>
+        <idCountry>Iran</idCountry>
+        <expirationDate>07 Aug 2012</expirationDate>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>25073</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NAYEBI</lastName>
+        <firstName>Pourya Ali Asghar</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>15026</uid>
+        <dateOfBirth>25 Jul 1974</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>15027</uid>
+        <placeOfBirth>Tehran, Iran</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16531</uid>
+    <firstName>Houshang</firstName>
+    <lastName>HOSSEINPOUR</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9133</uid>
+        <idType>Passport</idType>
+        <idNumber>R17550559</idNumber>
+        <idCountry>Iran</idCountry>
+        <expirationDate>11 Jul 2015</expirationDate>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>25075</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HOSSEINPOUR</lastName>
+        <firstName>Houshang Shahali</firstName>
+      </aka>
+      <aka>
+        <uid>25077</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HOSEIN-PUR</lastName>
+        <firstName>Houshang</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>15021</uid>
+        <dateOfBirth>21 Mar 1967</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>15022</uid>
+        <placeOfBirth>Tehran, Iran</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16543</uid>
+    <firstName>Houshang</firstName>
+    <lastName>FARSOUDEH</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9134</uid>
+        <idType>Passport</idType>
+        <idNumber>H2726141</idNumber>
+        <idCountry>Iran</idCountry>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>25120</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>FARSOUDEH</lastName>
+        <firstName>Hushang</firstName>
+      </aka>
+      <aka>
+        <uid>25121</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>FARSOUDEH</lastName>
+        <firstName>Houshang Hossein</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>15023</uid>
+        <dateOfBirth>10 Oct 1968</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>15024</uid>
+        <placeOfBirth>Tehran, Iran</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16544</uid>
+    <lastName>CAUCASUS ENERGY</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9135</uid>
+        <idType>Registration ID</idType>
+        <idNumber>406075081</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>25123</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>LLC CAUCASUS ENERGY</lastName>
+      </aka>
+      <aka>
+        <uid>25124</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>CAUCASUS ENERGY OF GEORGIA</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25001</uid>
+        <country>Georgia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16545</uid>
+    <lastName>ORCHIDEA GULF TRADING</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>25127</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>ORCHIDEA GENERAL TRADING LLC</lastName>
+      </aka>
+      <aka>
+        <uid>25128</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ORCHIDEA GULF EXCHANGE TRADING CO L</lastName>
+      </aka>
+      <aka>
+        <uid>25129</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>ORCHIDEA GULF COAST TRADING CO L</lastName>
+      </aka>
+      <aka>
+        <uid>25130</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ORCHIDEA GULF TRADING ALTIN VE KIYMELTI MADENLER DIS TIC LTD STI</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25003</uid>
+        <address1>P.O. Box 11254</address1>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25004</uid>
+        <address1>P.O. Box 11254</address1>
+        <address2>6305 Zinath Omar Kin Khatab</address2>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25005</uid>
+        <address1>P.O. Box 11256 Zinath Omar Kin Khatab</address1>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25006</uid>
+        <address1>P.O. Box 6305 Zinath Omar Kin Khatab</address1>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25007</uid>
+        <address1>P.O. Box 85334</address1>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25008</uid>
+        <address1>P.O. Box 85334, Office Number 605</address1>
+        <address2>Concord Hotel</address2>
+        <address3>Al Matoum Street</address3>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25009</uid>
+        <address1>Molla Gurani Mahallesi Sehit Pilot Nedim Sok. Evirgenler Ish</address1>
+        <address2>5/5</address2>
+        <city>Istanbul</city>
+        <country>Turkey</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16546</uid>
+    <lastName>GEORGIAN BUSINESS DEVELOPMENT</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>25132</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GBD FIZ</lastName>
+      </aka>
+      <aka>
+        <uid>25133</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GBD FIZ, LLC</lastName>
+      </aka>
+      <aka>
+        <uid>25134</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GBD FIZ LIMITED</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25011</uid>
+        <city>Tbilisi</city>
+        <country>Georgia</country>
+      </address>
+      <address>
+        <uid>25012</uid>
+        <address1>Plot 545</address1>
+        <address2>Unit 1B-8D</address2>
+        <address3>Free Industrial Zone</address3>
+        <city>Poti</city>
+        <country>Georgia</country>
+      </address>
+      <address>
+        <uid>25013</uid>
+        <city>Deira</city>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16547</uid>
+    <lastName>GREAT BUSINESS DEALS</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>25015</uid>
+        <city>Tbilisi</city>
+        <country>Georgia</country>
+      </address>
+      <address>
+        <uid>25016</uid>
+        <address1>Plot 545</address1>
+        <address2>Unit 1B-8D</address2>
+        <address3>Free Industrial Zone</address3>
+        <city>Poti</city>
+        <country>Georgia</country>
+      </address>
+      <address>
+        <uid>25017</uid>
+        <city>Deira</city>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16548</uid>
+    <lastName>KSN FOUNDATION</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <addressList>
+      <address>
+        <uid>25019</uid>
+        <address1>Muehleholz 3</address1>
+        <city>Vaduz</city>
+        <postalCode>94490</postalCode>
+        <country>Liechtenstein</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16549</uid>
+    <lastName>NEW YORK GENERAL TRADING</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9136</uid>
+        <idType>Registration ID</idType>
+        <idNumber>547066</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>25138</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>NYGT</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25021</uid>
+        <address1>No. 815, Al Maktoum Building</address1>
+        <address2>Al Maktoum St</address2>
+        <address3>P.O. Box 42108</address3>
+        <city>Deira</city>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16550</uid>
+    <lastName>NEW YORK MONEY EXCHANGE</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9137</uid>
+        <idType>Commercial Registry Number</idType>
+        <idNumber>549905</idNumber>
+        <idCountry>United Arab Emirates</idCountry>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>25140</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>NYME</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25023</uid>
+        <address1>P.O. Box 85334</address1>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25024</uid>
+        <address1>Shop 14</address1>
+        <address2>Al MM Tower</address2>
+        <address3>Al Maktoum St</address3>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25025</uid>
+        <address1>P.O. Box 31138</address1>
+        <stateOrProvince>Abu Dhabi</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25026</uid>
+        <address1>P.O. Box 42108</address1>
+        <stateOrProvince>Dubai</stateOrProvince>
+        <country>United Arab Emirates</country>
+      </address>
+      <address>
+        <uid>25027</uid>
+        <address1>20 Rustaveli Avenue</address1>
+        <stateOrProvince>Tbilisi</stateOrProvince>
+        <country>Georgia</country>
+      </address>
+      <address>
+        <uid>25028</uid>
+        <address1>Tbilisi International Airport</address1>
+        <city>Tbilisi</city>
+        <country>Georgia</country>
+      </address>
+      <address>
+        <uid>25029</uid>
+        <address1>Batumi Airport</address1>
+        <city>Batumi</city>
+        <country>Georgia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>16551</uid>
+    <lastName>EUROPEAN OIL TRADERS</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-IR</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>25142</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>EUROPEAN OIL TRADERS SA</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25031</uid>
+        <address1>Kaiserstuhlerstrasse 81</address1>
+        <address2>8175</address2>
+        <city>Windlach</city>
+        <country>Switzerland</country>
+      </address>
+      <address>
+        <uid>25032</uid>
+        <address1>8174 Stadel b.</address1>
+        <city>Niederglatt</city>
+        <country>Switzerland</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17013</uid>
+    <lastName>VTB BANK OAO</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9477</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027739609391</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9478</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>00032520</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9483</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7702070139</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9486</uid>
+        <idType>License</idType>
+        <idNumber>1000</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>115745</uid>
+        <idType>Website</idType>
+        <idNumber>www.vtb.com</idNumber>
+      </id>
+      <id>
+        <uid>115744</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>VTBRRUMM</idNumber>
+      </id>
+      <id>
+        <uid>116142</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 1</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26072</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>JSC VTB BANK</lastName>
+      </aka>
+      <aka>
+        <uid>26073</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK VTB, OPEN JOINT-STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26074</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>VNESHTORGBANK</lastName>
+      </aka>
+      <aka>
+        <uid>26075</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK VNESHNEY TORGOVLI, OPEN JOINT-STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26076</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK VNESHNEY TORGOVLI, JOINT-STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26077</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK VNESHNEY TORGOVLI RSFSR</lastName>
+      </aka>
+      <aka>
+        <uid>26078</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK VNESHNEY TORGOVLI ROSSIYSKOY FEDERATSII, CLOSED JOINT-STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26079</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>VNESHTORGBANK ROSSII, CLOSED JOINT-STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26080</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>VTB BANK, OPEN JOINT-STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26081</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK VTB OAO</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25798</uid>
+        <address1>29, Bolshaya Morskaya str.</address1>
+        <city>St. Petersburg</city>
+        <postalCode>190000</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25799</uid>
+        <address1>37 Plyushchikha ul.</address1>
+        <city>Moscow</city>
+        <postalCode>119121</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25800</uid>
+        <address1>43, Vorontsovskaya str.</address1>
+        <city>Moscow</city>
+        <postalCode>109044</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17014</uid>
+    <lastName>RUSSIAN AGRICULTURAL BANK</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9492</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700342890</idNumber>
+      </id>
+      <id>
+        <uid>9493</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>52750822</idNumber>
+      </id>
+      <id>
+        <uid>115820</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>RUAG RU MM</idNumber>
+      </id>
+      <id>
+        <uid>115746</uid>
+        <idType>Email Address</idType>
+        <idNumber>office@rshb.ru</idNumber>
+      </id>
+      <id>
+        <uid>115747</uid>
+        <idType>Website</idType>
+        <idNumber>http://www.rshb.ru</idNumber>
+      </id>
+      <id>
+        <uid>116141</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 1</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26083</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RUSSIAN AGRICULTURAL BANK OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26084</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ROSSIYSKI SELSKOKHOZYAISTVENNY BANK OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26085</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ROSSELKHOZBANK</lastName>
+      </aka>
+      <aka>
+        <uid>26086</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>OTKRYTOE AKTSIONERNOE ROSSISKI SELSKOKHOZYAISTVENNY BANK</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25802</uid>
+        <address1>3, Gagarinsky Pereulok</address1>
+        <city>Moscow</city>
+        <postalCode>119034</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25803</uid>
+        <address1>3 Gagarinsky per.</address1>
+        <city>Moscow</city>
+        <postalCode>119034</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17015</uid>
+    <lastName>VNESHECONOMBANK</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>115778</uid>
+        <idType>BIK (RU)</idType>
+        <idNumber>044525060</idNumber>
+      </id>
+      <id>
+        <uid>115748</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>BFEA RU MM</idNumber>
+      </id>
+      <id>
+        <uid>115791</uid>
+        <idType>Website</idType>
+        <idNumber>http://www.veb.ru</idNumber>
+      </id>
+      <id>
+        <uid>115792</uid>
+        <idType>Email Address</idType>
+        <idNumber>info@veb.ru</idNumber>
+      </id>
+      <id>
+        <uid>116153</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 1</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26088</uid>
+        <type>a.k.a.</type>
+        <category>weak</category>
+        <lastName>VEB</lastName>
+      </aka>
+      <aka>
+        <uid>26089</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK RAZVITIYA I VNESHNEEKONOMICHESKOI DEYATELNOSTI (VNESHEKONOMBANK) GOSUDARSTVENNAYA KORPORATSIYA</lastName>
+      </aka>
+      <aka>
+        <uid>26090</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BANK FOR DEVELOPMENT AND FOREIGN ECONOMIC AFFAIRS (VNESHECONOMBANK) STATE CORPORATION</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25805</uid>
+        <address1>9 Akademika Sakharova prospekt</address1>
+        <city>Moscow</city>
+        <postalCode>107996</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17016</uid>
+    <lastName>GAZPROMBANK OAO</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9495</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700167110</idNumber>
+      </id>
+      <id>
+        <uid>9496</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>09807684</idNumber>
+      </id>
+      <id>
+        <uid>9497</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7744001497</idNumber>
+      </id>
+      <id>
+        <uid>115751</uid>
+        <idType>Website</idType>
+        <idNumber>www.gazprombank.ru</idNumber>
+      </id>
+      <id>
+        <uid>115749</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>GAZPRUMM</idNumber>
+      </id>
+      <id>
+        <uid>115750</uid>
+        <idType>Email Address</idType>
+        <idNumber>mailbox@gazprombank.ru</idNumber>
+      </id>
+      <id>
+        <uid>116139</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 1</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26092</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GAZPROMBANK OTKRYTOE AKTSIONERNOE OBSHCHESTVO</lastName>
+      </aka>
+      <aka>
+        <uid>26093</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GPB, OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26094</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GPB, OJSC</lastName>
+      </aka>
+      <aka>
+        <uid>26095</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GAZPROMBANK OPEN JOINT STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26096</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GAZPROMBANK OJSC</lastName>
+      </aka>
+      <aka>
+        <uid>26097</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GAZPROMBANK GAS INDUSTRY OJSC</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25807</uid>
+        <address1>16, Building 1, Nametkina St.</address1>
+        <city>Moscow</city>
+        <postalCode>117420</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25808</uid>
+        <address1>63, Novocheremushkinskaya St.</address1>
+        <city>Moscow</city>
+        <postalCode>117418</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17017</uid>
+    <lastName>BANK OF MOSCOW</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9498</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700159497</idNumber>
+      </id>
+      <id>
+        <uid>9499</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>29292940</idNumber>
+      </id>
+      <id>
+        <uid>115752</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>MOSW RU MM</idNumber>
+      </id>
+      <id>
+        <uid>115753</uid>
+        <idType>Website</idType>
+        <idNumber>www.bm.ru</idNumber>
+      </id>
+      <id>
+        <uid>115754</uid>
+        <idType>Email Address</idType>
+        <idNumber>holmogorov_ss@mmbank.ru</idNumber>
+      </id>
+      <id>
+        <uid>115755</uid>
+        <idType>Email Address</idType>
+        <idNumber>info@mmbank.ru</idNumber>
+      </id>
+      <id>
+        <uid>115819</uid>
+        <idType>BIK (RU)</idType>
+        <idNumber>044525219</idNumber>
+      </id>
+      <id>
+        <uid>116145</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 1</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26099</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>JOINT STOCK COMMERCIAL BANK - BANK OF MOSCOW, OPEN JOINT STOCK COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26100</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>AKTSIONERNY KOMMERCHESKI BANK BANK MOSKVY, OTKRYTOE AKTSIONERNOE OBSCHCHESTVO</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25810</uid>
+        <address1>8/15 Korp. 3 ul. Rozhdestvenka</address1>
+        <city>Moscow</city>
+        <postalCode>107996</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25811</uid>
+        <address1>Bld 3 8/15</address1>
+        <address2>Rozhdestvenka St.</address2>
+        <city>Moscow</city>
+        <postalCode>107996</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17018</uid>
+    <lastName>SBERBANK OF RUSSIA</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>115756</uid>
+        <idType>Email Address</idType>
+        <idNumber>sbrf@sbrf.ru</idNumber>
+      </id>
+      <id>
+        <uid>115757</uid>
+        <idType>Website</idType>
+        <idNumber>www.sberbank.ru</idNumber>
+      </id>
+      <id>
+        <uid>116134</uid>
+        <idType>SWIFT/BIC</idType>
+        <idNumber>SABRRUMM</idNumber>
+      </id>
+      <id>
+        <uid>116151</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 1</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26102</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SBERBANK ROSSII</lastName>
+      </aka>
+      <aka>
+        <uid>26103</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>SBERBANK ROSSII OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26104</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>OTKRYTOE AKTSIONERNOE OBSHCHESTVO SBERBANK ROSSII</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25813</uid>
+        <address1>19 ul. Vavilova</address1>
+        <city>Moscow</city>
+        <postalCode>117997</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17022</uid>
+    <lastName>OPEN JOINT-STOCK COMPANY ROSNEFT OIL COMPANY</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9502</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700043502</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9503</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>00044428</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9504</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7706107510</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>115775</uid>
+        <idType>Email Address</idType>
+        <idNumber>postman@rosneft.ru</idNumber>
+      </id>
+      <id>
+        <uid>115776</uid>
+        <idType>Website</idType>
+        <idNumber>www.rosneft.com</idNumber>
+      </id>
+      <id>
+        <uid>115777</uid>
+        <idType>Website</idType>
+        <idNumber>www.rosneft.ru</idNumber>
+      </id>
+      <id>
+        <uid>116148</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 2</idNumber>
+      </id>
+      <id>
+        <uid>116149</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 4</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26109</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OJSC ROSNEFT OIL COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26110</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ROSNEFT OIL COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26111</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OAO ROSNEFT OIL COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26112</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OIL COMPANY ROSNEFT</lastName>
+      </aka>
+      <aka>
+        <uid>26113</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ROSNEFT</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25840</uid>
+        <address1>26/1 Sofiyskaya Embankment</address1>
+        <city>Moscow</city>
+        <postalCode>115035</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17064</uid>
+    <lastName>OAO NOVATEK</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9524</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1026303117642 (Russia)</idNumber>
+      </id>
+      <id>
+        <uid>9525</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>33556474 (Russia)</idNumber>
+      </id>
+      <id>
+        <uid>115815</uid>
+        <idType>Email Address</idType>
+        <idNumber>novatek@novatek.ru</idNumber>
+      </id>
+      <id>
+        <uid>116140</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 2</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26208</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>FINANSOVO-INVESTITSIONNAYA KOMPANIYA NOVAFININVEST OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26220</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NOVATEK</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>25919</uid>
+        <address1>2, Udaltsova Street</address1>
+        <stateOrProvince>Moscow</stateOrProvince>
+        <postalCode>119415</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25921</uid>
+        <address1>22 A, Pobedy Street</address1>
+        <address2>Tarko-Sale</address2>
+        <city>Yamalo-Nenets Autonomous District</city>
+        <postalCode>629580</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>25922</uid>
+        <address1>22a Pobedy ul.</address1>
+        <address2>Tarko-Sale</address2>
+        <city>Purovski raion</city>
+        <stateOrProvince>Tyumenskaya Oblast</stateOrProvince>
+        <postalCode>629850</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17143</uid>
+    <lastName>OJSC GAZPROM NEFT</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9591</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>5504036333</idNumber>
+      </id>
+      <id>
+        <uid>9590</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>42045241</idNumber>
+      </id>
+      <id>
+        <uid>9589</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1025501701686</idNumber>
+      </id>
+      <id>
+        <uid>115916</uid>
+        <idType>Email Address</idType>
+        <idNumber>shareholders@gazprom-neft.ru</idNumber>
+      </id>
+      <id>
+        <uid>115918</uid>
+        <idType>Email Address</idType>
+        <idNumber>ir@gazprom-neft.ru</idNumber>
+      </id>
+      <id>
+        <uid>115913</uid>
+        <idType>Website</idType>
+        <idNumber>http://www.gazprom-neft.com/</idNumber>
+      </id>
+      <id>
+        <uid>115914</uid>
+        <idType>Email Address</idType>
+        <idNumber>info@gazprom-neft.ru</idNumber>
+      </id>
+      <id>
+        <uid>115915</uid>
+        <idType>Email Address</idType>
+        <idNumber>pr@gazprom-neft.ru</idNumber>
+      </id>
+      <id>
+        <uid>116137</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 2</idNumber>
+      </id>
+      <id>
+        <uid>116138</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 4</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26283</uid>
+        <type>f.k.a.</type>
+        <category>strong</category>
+        <lastName>SIBIRSKAYA NEFTYANAYA KOMPANIYA OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26284</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OPEN JOINT-STOCK COMPANY GAZPROM NEFT</lastName>
+      </aka>
+      <aka>
+        <uid>26285</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>JSC GAZPROM NEFT</lastName>
+      </aka>
+      <aka>
+        <uid>26286</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GAZPROM NEFT OAO</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26038</uid>
+        <address1>Let. A. Galernaya, 5</address1>
+        <address2>ul</address2>
+        <city>St. Petersburg</city>
+        <postalCode>190000</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26039</uid>
+        <address1>Ul. Pochtamtskaya, 3-5</address1>
+        <city>St. Petersburg</city>
+        <postalCode>190000</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26040</uid>
+        <address1>3-5 Pochtamtskaya St.</address1>
+        <city>St. Petersburg</city>
+        <postalCode>190000</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26041</uid>
+        <address1>125 A. Profsoyuznaya Street</address1>
+        <city>Moscow</city>
+        <postalCode>117647</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17145</uid>
+    <lastName>SURGUTNEFTEGAS</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>115922</uid>
+        <idType>Email Address</idType>
+        <idNumber>secretary@surgutneftegas.ru</idNumber>
+      </id>
+      <id>
+        <uid>115923</uid>
+        <idType>Website</idType>
+        <idNumber>www.surgutneftegas.ru</idNumber>
+      </id>
+      <id>
+        <uid>116154</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 4</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26292</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OPEN JOINT STOCK COMPANY SURGUTNEFTEGAS</lastName>
+      </aka>
+      <aka>
+        <uid>26293</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SURGUTNEFTEGAZ OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26295</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OTKRYTOE AKTSIONERNOE OBSHCHESTVO SURGUTNEFTEGAZ</lastName>
+      </aka>
+      <aka>
+        <uid>26296</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SURGUTNEFTEGAS OJSC</lastName>
+      </aka>
+      <aka>
+        <uid>26297</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>SURGUTNEFTEGAS OAO</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26046</uid>
+        <address1>ul. Grigoriya Kukuyevitskogo, 1</address1>
+        <address2>bld. 1</address2>
+        <address3>Khanty-Mansiysky Autonomous Okrug - Yugra</address3>
+        <city>the city of Surgut</city>
+        <stateOrProvince>Tyumenskaya Oblast</stateOrProvince>
+        <postalCode>628415</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26048</uid>
+        <address1>korp. 1 1 Grigoriya Kukuevitskogo ul.</address1>
+        <city>Surgut</city>
+        <stateOrProvince>Tyumenskaya oblast</stateOrProvince>
+        <postalCode>628404</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26049</uid>
+        <address1>Street Kukuevitskogo 1</address1>
+        <city>Surgut</city>
+        <stateOrProvince>Tyumen Region</stateOrProvince>
+        <postalCode>628415</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17248</uid>
+    <lastName>LUKOIL OAO</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9662</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>00044434</idNumber>
+      </id>
+      <id>
+        <uid>9663</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7708004767</idNumber>
+      </id>
+      <id>
+        <uid>9664</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700035769</idNumber>
+      </id>
+      <id>
+        <uid>116111</uid>
+        <idType>Email Address</idType>
+        <idNumber>info@lukoil.ru</idNumber>
+      </id>
+      <id>
+        <uid>116112</uid>
+        <idType>Website</idType>
+        <idNumber>www.lukoil.ru</idNumber>
+      </id>
+      <id>
+        <uid>116146</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 4</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26538</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>LUKOIL OIL COMPANY</lastName>
+      </aka>
+      <aka>
+        <uid>26539</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>LUKOIL</lastName>
+      </aka>
+      <aka>
+        <uid>26540</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NK LUKOIL OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26541</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>NEFTYANAYA KOMPANIYA LUKOIL OOO</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26282</uid>
+        <address1>11 Sretenski boulevard</address1>
+        <city>Moscow</city>
+        <postalCode>101000</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17250</uid>
+    <lastName>OPEN JOINT STOCK COMPANY GAZPROM</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9672</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700070518</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9668</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>00040778</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9669</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7736050003</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>116117</uid>
+        <idType>Email Address</idType>
+        <idNumber>gazprom@gazprom.ru</idNumber>
+      </id>
+      <id>
+        <uid>116118</uid>
+        <idType>Website</idType>
+        <idNumber>www.gazprom.ru</idNumber>
+      </id>
+      <id>
+        <uid>116147</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 4</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26548</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OAO GAZPROM</lastName>
+      </aka>
+      <aka>
+        <uid>26549</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>GAZPROM OAO</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26288</uid>
+        <address1>16 Nametkina St.</address1>
+        <city>Moscow</city>
+        <stateOrProvince>Russia</stateOrProvince>
+        <postalCode>GSP-7, 117997</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26290</uid>
+        <address1>16 Nametkina ul.</address1>
+        <city>Moscow</city>
+        <postalCode>117991</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17254</uid>
+    <lastName>AK TRANSNEFT OAO</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9691</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1027700049486</idNumber>
+      </id>
+      <id>
+        <uid>9692</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7706061801</idNumber>
+      </id>
+      <id>
+        <uid>9693</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>00044463</idNumber>
+      </id>
+      <id>
+        <uid>116119</uid>
+        <idType>Email Address</idType>
+        <idNumber>transneft@ak.transneft.ru</idNumber>
+      </id>
+      <id>
+        <uid>116120</uid>
+        <idType>Website</idType>
+        <idNumber>www.transneft.ru</idNumber>
+      </id>
+      <id>
+        <uid>116143</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 2</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26558</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OAO AK TRANSNEFT</lastName>
+      </aka>
+      <aka>
+        <uid>26559</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>AKTSIONERNAYA KOMPANIYA PO TRANSPORTUNEFTI TRANSNEFT OAO</lastName>
+      </aka>
+      <aka>
+        <uid>26560</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>OIL TRANSPORTING JOINT-STOCK COMPANY TRANSNEFT</lastName>
+      </aka>
+      <aka>
+        <uid>26561</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>TRANSNEFT, JSC</lastName>
+      </aka>
+      <aka>
+        <uid>26562</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>TRANSNEFT OJSC</lastName>
+      </aka>
+      <aka>
+        <uid>26563</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>TRANSNEFT</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26306</uid>
+        <address1>57 B. Polyanka ul.</address1>
+        <city>Moscow</city>
+        <postalCode>119180</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26307</uid>
+        <address1>57 Bolshaya. Polyanka</address1>
+        <city>Moscow</city>
+        <postalCode>119180</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17260</uid>
+    <lastName>ROSTEC</lastName>
+    <sdnType>Entity</sdnType>
+    <remarks>For more information on directives, please visit the following link: http://www.treasury.gov/resource-center/sanctions/Programs/Pages/ukraine.aspx#directives.</remarks>
+    <programList>
+      <program>UKRAINE-EO13662</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9699</uid>
+        <idType>Registration ID</idType>
+        <idNumber>1077799030847</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9700</uid>
+        <idType>Tax ID No.</idType>
+        <idNumber>7704274402</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>9701</uid>
+        <idType>Government Gazette Number</idType>
+        <idNumber>94137372</idNumber>
+        <idCountry>Russia</idCountry>
+      </id>
+      <id>
+        <uid>116130</uid>
+        <idType>Email Address</idType>
+        <idNumber>info@rostec.ru</idNumber>
+      </id>
+      <id>
+        <uid>116131</uid>
+        <idType>Website</idType>
+        <idNumber>www.rostec.ru</idNumber>
+      </id>
+      <id>
+        <uid>116150</uid>
+        <idType>Executive Order 13662 Directive Determination -</idType>
+        <idNumber>Subject to Directive 3</idNumber>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>26591</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>STATE CORPORATION FOR ASSISTANCE TO DEVELOPMENT, PRODUCTION AND EXPORT OF ADVANCED TECHNOLOGY INDUSTRIAL PRODUCT ROSTEKHNOLOGII</lastName>
+      </aka>
+      <aka>
+        <uid>26592</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>STATE CORPORATION ROSTEKHNOLOGII</lastName>
+      </aka>
+      <aka>
+        <uid>26593</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>ROSTEC STATE CORPORATION</lastName>
+      </aka>
+      <aka>
+        <uid>26594</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RUSSIAN TECHNOLOGIES STATE CORPORATION FOR ASSISTANCE TO DEVELOPMENT, PRODUCTION AND EXPORT OF ADVANCED TECHNOLOGY INDUSTRIAL PRODUCT</lastName>
+      </aka>
+      <aka>
+        <uid>26595</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>RUSSIAN TECHNOLOGIES</lastName>
+      </aka>
+      <aka>
+        <uid>26596</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>STATE CORPORATION ROSTECHNOLOGII</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26319</uid>
+        <address1>24 Usacheva ul.</address1>
+        <city>Moscow</city>
+        <postalCode>119048</postalCode>
+        <country>Russia</country>
+      </address>
+      <address>
+        <uid>26320</uid>
+        <address1>21 Gogolevsky Blvd.</address1>
+        <city>Moscow</city>
+        <postalCode>119991</postalCode>
+        <country>Russia</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17526</uid>
+    <firstName>Halis</firstName>
+    <lastName>BEKTAS</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>FSE-SY</program>
+      <program>SYRIA</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9869</uid>
+        <idType>Passport</idType>
+        <idNumber>X0906223</idNumber>
+        <idCountry>Switzerland</idCountry>
+      </id>
+    </idList>
+    <citizenshipList>
+      <citizenship>
+        <uid>16500</uid>
+        <country>Switzerland</country>
+        <mainEntry>true</mainEntry>
+      </citizenship>
+    </citizenshipList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>16499</uid>
+        <dateOfBirth>13 Feb 1966</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17527</uid>
+    <lastName>RIXO INTERNATIONAL TRADING LTD.</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-SY</program>
+      <program>SYRIA</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>116501</uid>
+        <idType>Website</idType>
+        <idNumber>http://www.rixointernational.com</idNumber>
+      </id>
+    </idList>
+    <addressList>
+      <address>
+        <uid>26683</uid>
+        <address1>Lindenstrasse 2</address1>
+        <city>Baar</city>
+        <postalCode>6340</postalCode>
+        <country>Switzerland</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17528</uid>
+    <lastName>BLUEMARINE SA</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-SY</program>
+      <program>SYRIA</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>27038</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BLUE MARINE SHIPPING AGENCY S.A.</lastName>
+      </aka>
+      <aka>
+        <uid>27039</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BLUEMARINE AG</lastName>
+      </aka>
+      <aka>
+        <uid>27040</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>BLUEMARINE LTD</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26686</uid>
+        <address1>Lindenstrasse 2</address1>
+        <city>Baar</city>
+        <postalCode>6340</postalCode>
+        <country>Switzerland</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17530</uid>
+    <lastName>STAROIL B.V.</lastName>
+    <sdnType>Entity</sdnType>
+    <programList>
+      <program>FSE-SY</program>
+      <program>SYRIA</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9870</uid>
+        <idType>V.A.T. Number</idType>
+        <idNumber>NL 819860578B01</idNumber>
+        <idCountry>Netherlands</idCountry>
+      </id>
+      <id>
+        <uid>9871</uid>
+        <idType>Registration ID</idType>
+        <idNumber>819860578</idNumber>
+        <idCountry>Netherlands</idCountry>
+      </id>
+      <id>
+        <uid>9872</uid>
+        <idType>Commercial Registry Number</idType>
+        <idNumber>34311024</idNumber>
+        <idCountry>Netherlands</idCountry>
+      </id>
+    </idList>
+    <akaList>
+      <aka>
+        <uid>27044</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>STAROIL S.A.</lastName>
+      </aka>
+    </akaList>
+    <addressList>
+      <address>
+        <uid>26690</uid>
+        <address1>Wilhelminastraat 43 A</address1>
+        <city>Haarlem</city>
+        <postalCode>2011 VK</postalCode>
+        <country>Netherlands</country>
+      </address>
+      <address>
+        <uid>26691</uid>
+        <address1>30 A Rte de Chene</address1>
+        <city>Geneva</city>
+        <postalCode>1208</postalCode>
+        <country>Switzerland</country>
+      </address>
+    </addressList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17531</uid>
+    <firstName>Alexander</firstName>
+    <lastName>HOLLEBRAND</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>FSE-SY</program>
+      <program>SYRIA</program>
+    </programList>
+    <akaList>
+      <aka>
+        <uid>27046</uid>
+        <type>a.k.a.</type>
+        <category>strong</category>
+        <lastName>HOLLEBRAND</lastName>
+        <firstName>Sander</firstName>
+      </aka>
+    </akaList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>16502</uid>
+        <dateOfBirth>20 Dec 1954</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+    <placeOfBirthList>
+      <placeOfBirthItem>
+        <uid>16503</uid>
+        <placeOfBirth>Netherlands</placeOfBirth>
+        <mainEntry>true</mainEntry>
+      </placeOfBirthItem>
+    </placeOfBirthList>
+  </sdnEntry>
+  <sdnEntry>
+    <uid>17532</uid>
+    <firstName>Paul</firstName>
+    <lastName>VAN MAZIJK</lastName>
+    <sdnType>Individual</sdnType>
+    <programList>
+      <program>FSE-SY</program>
+      <program>SYRIA</program>
+    </programList>
+    <idList>
+      <id>
+        <uid>9873</uid>
+        <idType>Passport</idType>
+        <idNumber>NSK7K05F4</idNumber>
+        <idCountry>Netherlands</idCountry>
+      </id>
+    </idList>
+    <dateOfBirthList>
+      <dateOfBirthItem>
+        <uid>16504</uid>
+        <dateOfBirth>24 Jan 1958</dateOfBirth>
+        <mainEntry>true</mainEntry>
+      </dateOfBirthItem>
+    </dateOfBirthList>
+  </sdnEntry>
+</sdnList>
