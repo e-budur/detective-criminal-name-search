@@ -45,7 +45,6 @@ public class SDN {
 		return id;
 	}
 	
-	
 	public String toString()
 	{
 		StringBuilder sb = new StringBuilder();
@@ -59,8 +58,4 @@ public class SDN {
 		
 		return sb.toString();
 	}
-	
-	
-	
-
 }
