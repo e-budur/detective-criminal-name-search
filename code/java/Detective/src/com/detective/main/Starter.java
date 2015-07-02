@@ -49,7 +49,7 @@ public class Starter {
 			int nameIndex = 0;
 			for(String name:sdn.getNames())
 			{
-				Utils.println(sdn);
+				//Utils.println(sdn);
 				addDoc(w, name, sdn.getId()+"-"+nameIndex);
 				nameIndex++;
 			}
