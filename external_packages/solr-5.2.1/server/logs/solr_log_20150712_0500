@@ -1,0 +1,32 @@
+INFO  - 2015-07-12 01:04:48.998; [   ] org.eclipse.jetty.util.log.Log; Logging initialized @395ms
+INFO  - 2015-07-12 01:04:49.254; [   ] org.eclipse.jetty.server.Server; jetty-9.2.10.v20150310
+WARN  - 2015-07-12 01:04:49.277; [   ] org.eclipse.jetty.server.handler.RequestLogHandler; !RequestLog
+INFO  - 2015-07-12 01:04:49.280; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor [file:/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/contexts/] at interval 0
+INFO  - 2015-07-12 01:04:50.086; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+WARN  - 2015-07-12 01:04:50.107; [   ] org.eclipse.jetty.security.ConstraintSecurityHandler; ServletContext@o.e.j.w.WebAppContext@46d56d67{/solr,file:/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr-webapp/webapp/,STARTING}{/solr.war} has uncovered http methods for path: /
+INFO  - 2015-07-12 01:04:50.148; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()WebAppClassLoader=1750905143@685cb137
+INFO  - 2015-07-12 01:04:50.171; [   ] org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2015-07-12 01:04:50.171; [   ] org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr
+INFO  - 2015-07-12 01:04:50.172; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr/'
+INFO  - 2015-07-12 01:04:50.418; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr/solr.xml
+INFO  - 2015-07-12 01:04:50.519; [   ] org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr
+INFO  - 2015-07-12 01:04:50.569; [   ] org.apache.solr.core.CoreContainer; New CoreContainer 1578009262
+INFO  - 2015-07-12 01:04:50.570; [   ] org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr/]
+INFO  - 2015-07-12 01:04:50.570; [   ] org.apache.solr.core.CoreContainer; loading shared library: /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr/lib
+WARN  - 2015-07-12 01:04:50.570; [   ] org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: lib (resolved as: /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr/lib).
+INFO  - 2015-07-12 01:04:50.611; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+INFO  - 2015-07-12 01:04:50.780; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2015-07-12 01:04:50.783; [   ] org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2015-07-12 01:04:50.784; [   ] org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2015-07-12 01:04:50.786; [   ] org.apache.solr.core.CoreContainer; Node Name: 
+INFO  - 2015-07-12 01:04:50.787; [   ] org.apache.solr.core.CoreContainer; No authentication plugin used.
+INFO  - 2015-07-12 01:04:50.841; [   ] org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr
+INFO  - 2015-07-12 01:04:50.851; [   ] org.apache.solr.core.CorePropertiesLocator; Found 0 core definitions
+INFO  - 2015-07-12 01:04:50.852; [   ] org.apache.solr.servlet.SolrDispatchFilter; user.dir=/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server
+INFO  - 2015-07-12 01:04:50.852; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2015-07-12 01:04:50.866; [   ] org.eclipse.jetty.server.handler.ContextHandler; Started o.e.j.w.WebAppContext@46d56d67{/solr,file:/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr-webapp/webapp/,AVAILABLE}{/solr.war}
+INFO  - 2015-07-12 01:04:50.890; [   ] org.eclipse.jetty.server.AbstractConnector; Started ServerConnector@3514a4c0{HTTP/1.1}{0.0.0.0:8983}
+INFO  - 2015-07-12 01:04:50.891; [   ] org.eclipse.jetty.server.Server; Started @2291ms
+INFO  - 2015-07-12 01:05:27.287; [   ] org.eclipse.jetty.server.AbstractConnector; Stopped ServerConnector@3514a4c0{HTTP/1.1}{0.0.0.0:8983}
+INFO  - 2015-07-12 01:05:27.289; [   ] org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1578009262
+INFO  - 2015-07-12 01:05:27.300; [   ] org.eclipse.jetty.server.handler.ContextHandler; Stopped o.e.j.w.WebAppContext@46d56d67{/solr,file:/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/server/solr-webapp/webapp/,UNAVAILABLE}{/solr.war}
