@@ -67,8 +67,6 @@ class ReferenceValueSet:
             data_set['Text'] = referenceValueNode.text
             entity_dict[id] = data_set
 
-        print xpath_str, entity_dict
-
         return entity_dict
 
     def print_filepath(self):

@@ -15672,3 +15672,1681 @@ Caused by: java.net.SocketException: Network is unreachable
 
 ERROR - 2015-08-23 18:28:17.763; [   ] org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (59) core=gettingstarted_shard2_replica2
 INFO  - 2015-08-23 18:28:17.764; [   ] org.apache.solr.cloud.RecoveryStrategy; Wait 60.0 seconds before trying to recover again (60)
+INFO  - 2015-08-23 18:33:14.765; [   ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-08-23 18:33:14.771; [gettingstarted   gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-23 18:33:14.791; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-23 18:33:14.796; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-23 18:33:14.801; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-23 18:33:14.819; [   ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-23 18:33:14.850; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 691
+INFO  - 2015-08-23 18:33:14.853; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-23 18:33:14.862; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 692 
+INFO  - 2015-08-23 18:33:17.946; [   ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-08-23 18:33:17.949; [gettingstarted   gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-23 18:33:17.953; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-23 18:33:17.958; [   ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node1&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-23 18:33:17.959; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-23 18:33:17.962; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-23 18:33:17.971; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 692
+INFO  - 2015-08-23 18:33:17.974; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-23 18:33:17.975; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 693 
+INFO  - 2015-08-23 18:33:20.976; [   ] org.apache.http.impl.client.DefaultRequestDirector; I/O exception (java.net.SocketException) caught when connecting to {}->http://192.168.2.243:8983: Network is unreachable
+INFO  - 2015-08-23 18:33:20.977; [   ] org.apache.http.impl.client.DefaultRequestDirector; Retrying connect to {}->http://192.168.2.243:8983
+INFO  - 2015-08-23 18:33:23.990; [   ] org.apache.http.impl.client.DefaultRequestDirector; I/O exception (java.net.SocketException) caught when connecting to {}->http://192.168.2.243:8983: Network is unreachable
+INFO  - 2015-08-23 18:33:23.990; [   ] org.apache.http.impl.client.DefaultRequestDirector; Retrying connect to {}->http://192.168.2.243:8983
+INFO  - 2015-08-23 18:33:27.008; [   ] org.apache.http.impl.client.DefaultRequestDirector; I/O exception (java.net.SocketException) caught when connecting to {}->http://192.168.2.243:8983: Network is unreachable
+INFO  - 2015-08-23 18:33:27.009; [   ] org.apache.http.impl.client.DefaultRequestDirector; Retrying connect to {}->http://192.168.2.243:8983
+INFO  - 2015-08-23 18:33:30.052; [   ] org.apache.http.impl.client.DefaultRequestDirector; I/O exception (java.net.SocketException) caught when connecting to {}->http://192.168.2.243:8983: Network is unreachable
+INFO  - 2015-08-23 18:33:30.053; [   ] org.apache.http.impl.client.DefaultRequestDirector; Retrying connect to {}->http://192.168.2.243:8983
+INFO  - 2015-08-23 18:33:33.073; [   ] org.apache.http.impl.client.DefaultRequestDirector; I/O exception (java.net.SocketException) caught when connecting to {}->http://192.168.2.243:8983: Network is unreachable
+INFO  - 2015-08-23 18:33:33.074; [   ] org.apache.http.impl.client.DefaultRequestDirector; Retrying connect to {}->http://192.168.2.243:8983
+INFO  - 2015-08-23 18:33:36.076; [   ] org.apache.http.impl.client.DefaultRequestDirector; I/O exception (java.net.SocketException) caught when connecting to {}->http://192.168.2.243:8983: Network is unreachable
+INFO  - 2015-08-23 18:33:36.076; [   ] org.apache.http.impl.client.DefaultRequestDirector; Retrying connect to {}->http://192.168.2.243:8983
+ERROR - 2015-08-23 18:33:39.105; [   ] org.apache.solr.common.SolrException; Error while trying to recover. core=gettingstarted_shard1_replica2:java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: IOException occured when talking to server at: http://192.168.2.243:8983/solr
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:601)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:364)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:229)
+Caused by: org.apache.solr.client.solrj.SolrServerException: IOException occured when talking to server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:574)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:271)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:148)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 7 more
+
+ERROR - 2015-08-23 18:33:39.109; [   ] org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (60) core=gettingstarted_shard1_replica2
+INFO  - 2015-08-23 18:33:39.109; [   ] org.apache.solr.cloud.RecoveryStrategy; Wait 60.0 seconds before trying to recover again (61)
+ERROR - 2015-08-23 18:33:42.146; [   ] org.apache.solr.common.SolrException; Error while trying to recover. core=gettingstarted_shard2_replica2:java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: IOException occured when talking to server at: http://192.168.2.243:8983/solr
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:601)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:364)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:229)
+Caused by: org.apache.solr.client.solrj.SolrServerException: IOException occured when talking to server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:574)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:271)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:148)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 7 more
+
+ERROR - 2015-08-23 18:33:42.156; [   ] org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (60) core=gettingstarted_shard2_replica2
+INFO  - 2015-08-23 18:33:42.158; [   ] org.apache.solr.cloud.RecoveryStrategy; Wait 60.0 seconds before trying to recover again (61)
+INFO  - 2015-08-23 19:44:41.783; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+INFO  - 2015-08-23 19:44:41.817; [   ] org.apache.solr.common.cloud.ConnectionManager; zkClient has disconnected
+INFO  - 2015-08-23 19:44:42.743; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Expired type:None path:null path:null type:None
+INFO  - 2015-08-23 19:44:42.743; [   ] org.apache.solr.common.cloud.ConnectionManager; Our previous ZooKeeper session was expired. Attempting to reconnect to recover relationship with ZooKeeper...
+INFO  - 2015-08-23 19:44:42.744; [   ] org.apache.solr.cloud.Overseer; Overseer (id=94281829357649983-192.168.2.243:7574_solr-n_0000000066) closing
+INFO  - 2015-08-23 19:44:42.746; [   ] org.apache.solr.common.cloud.DefaultConnectionStrategy; Connection expired - starting a new one...
+INFO  - 2015-08-23 19:44:42.746; [   ] org.apache.solr.cloud.ZkController$WatcherImpl; A node got unwatched for /configs/gettingstarted
+INFO  - 2015-08-23 19:44:42.746; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+INFO  - 2015-08-23 19:44:42.779; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; Overseer Loop exiting : 192.168.2.243:7574_solr
+INFO  - 2015-08-23 19:44:42.786; [   ] org.apache.solr.cloud.OverseerCollectionProcessor; According to ZK I (id=94281829357649983-192.168.2.243:7574_solr-n_0000000066) am no longer a leader.
+ERROR - 2015-08-23 19:44:42.802; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; could not read the data
+org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /overseer_elect/leader
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:345)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:342)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:342)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.checkIfIamStillLeader(Overseer.java:298)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.access$300(Overseer.java:85)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater$2.run(Overseer.java:259)
+ERROR - 2015-08-23 19:44:42.820; [   ] org.apache.solr.common.SolrException; OverseerAutoReplicaFailoverThread had an error in its thread work loop.:org.apache.solr.common.SolrException: Error reading cluster properties
+	at org.apache.solr.common.cloud.ZkStateReader.getClusterProps(ZkStateReader.java:779)
+	at org.apache.solr.cloud.OverseerAutoReplicaFailoverThread.doWork(OverseerAutoReplicaFailoverThread.java:152)
+	at org.apache.solr.cloud.OverseerAutoReplicaFailoverThread.run(OverseerAutoReplicaFailoverThread.java:131)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryDelay(ZkCmdExecutor.java:108)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:76)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:308)
+	at org.apache.solr.common.cloud.ZkStateReader.getClusterProps(ZkStateReader.java:772)
+	... 3 more
+
+WARN  - 2015-08-23 19:44:42.802; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-23 19:44:42.830; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+INFO  - 2015-08-23 19:44:42.828; [   ] org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2015-08-23 19:44:42.828; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+WARN  - 2015-08-23 19:44:42.846; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-23 19:44:42.827; [   ] org.apache.solr.cloud.ZkController$WatcherImpl; A node got unwatched for /configs/gettingstarted
+INFO  - 2015-08-23 19:44:42.882; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+WARN  - 2015-08-23 19:44:42.831; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+WARN  - 2015-08-23 19:44:42.883; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-23 19:44:42.912; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2015-08-23 19:44:42.928; [   ] org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2015-08-23 19:44:42.928; [   ] org.apache.solr.common.cloud.ConnectionManager$1; Connection with ZooKeeper reestablished.
+INFO  - 2015-08-23 19:44:42.928; [   ] org.apache.solr.cloud.ZkController$1; ZooKeeper session re-connected ... refreshing core states after session expiration.
+WARN  - 2015-08-23 19:44:42.935; [   ] org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=gettingstarted_shard1_replica2 coreNodeName=core_node2
+INFO  - 2015-08-23 19:44:43.778; [   ] org.apache.solr.cloud.RecoveryStrategy; Finished recovery process. core=gettingstarted_shard1_replica2
+WARN  - 2015-08-23 19:44:43.783; [   ] org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=gettingstarted_shard2_replica2 coreNodeName=core_node1
+INFO  - 2015-08-23 19:44:46.855; [   ] org.apache.solr.cloud.RecoveryStrategy; Finished recovery process. core=gettingstarted_shard2_replica2
+INFO  - 2015-08-23 19:44:46.864; [gettingstarted   gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=down collection=gettingstarted
+INFO  - 2015-08-23 19:44:46.886; [gettingstarted   gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=down collection=gettingstarted
+INFO  - 2015-08-24 01:51:52.674; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+INFO  - 2015-08-24 01:51:53.317; [   ] org.apache.solr.common.cloud.ConnectionManager; zkClient has disconnected
+INFO  - 2015-08-24 01:51:54.899; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Expired type:None path:null path:null type:None
+INFO  - 2015-08-24 01:51:54.899; [   ] org.apache.solr.common.cloud.ConnectionManager; Our previous ZooKeeper session was expired. Attempting to reconnect to recover relationship with ZooKeeper...
+INFO  - 2015-08-24 01:51:54.900; [   ] org.apache.solr.common.cloud.DefaultConnectionStrategy; Connection expired - starting a new one...
+INFO  - 2015-08-24 01:51:54.952; [   ] org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2015-08-24 01:51:55.700; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2015-08-24 01:51:55.728; [   ] org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2015-08-24 01:51:55.757; [   ] org.apache.solr.common.cloud.ConnectionManager$1; Connection with ZooKeeper reestablished.
+INFO  - 2015-08-24 01:51:55.757; [   ] org.apache.solr.cloud.ZkController$1; ZooKeeper session re-connected ... refreshing core states after session expiration.
+INFO  - 2015-08-24 01:51:55.758; [gettingstarted   gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=down collection=gettingstarted
+INFO  - 2015-08-24 01:51:56.289; [gettingstarted   gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=down collection=gettingstarted
+INFO  - 2015-08-24 01:51:56.661; [   ] org.apache.solr.cloud.ElectionContext; canceling election /overseer_elect/election/94281829357649983-192.168.2.243:7574_solr-n_0000000066
+WARN  - 2015-08-24 01:51:57.177; [   ] org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /overseer_elect/election/94281829357649983-192.168.2.243:7574_solr-n_0000000066
+INFO  - 2015-08-24 01:51:57.469; [   ] org.apache.solr.cloud.OverseerElectionContext; I am going to be the leader 192.168.2.243:7574_solr
+INFO  - 2015-08-24 01:51:57.575; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2015-08-24 01:51:57.963; [   ] org.apache.solr.cloud.Overseer; Overseer (id=94281829357649987-192.168.2.243:7574_solr-n_0000000070) starting
+INFO  - 2015-08-24 01:51:59.983; [   ] org.apache.solr.cloud.OverseerAutoReplicaFailoverThread; Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+INFO  - 2015-08-24 01:52:00.043; [   ] org.apache.solr.cloud.OverseerCollectionProcessor; Process current queue of collection creations
+INFO  - 2015-08-24 01:52:00.043; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2015-08-24 01:52:00.211; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2015-08-24 01:52:00.468; [   ] org.apache.solr.common.cloud.ZkStateReader; addZkWatch gettingstarted
+INFO  - 2015-08-24 01:52:00.570; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating collection state at /collections/gettingstarted/state.json from ZooKeeper... 
+INFO  - 2015-08-24 01:52:00.697; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 697 
+INFO  - 2015-08-24 01:52:00.697; [   ] org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.2.243:7574_solr
+INFO  - 2015-08-24 01:52:00.803; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.2.243:7574_solr
+INFO  - 2015-08-24 01:52:00.967; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 697 
+INFO  - 2015-08-24 01:52:00.968; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: workQueueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.000; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.000; [   ] org.apache.solr.cloud.ZkController$RegisterCoreAsync; Registering core gettingstarted_shard2_replica2 afterExpiration? true
+INFO  - 2015-08-24 01:52:01.000; [   ] org.apache.solr.cloud.ZkController$RegisterCoreAsync; Registering core gettingstarted_shard1_replica2 afterExpiration? true
+INFO  - 2015-08-24 01:52:01.002; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+INFO  - 2015-08-24 01:52:01.002; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard2_replica2 address:http://192.168.2.243:7574/solr collection:gettingstarted shard:shard2
+INFO  - 2015-08-24 01:52:01.002; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard1_replica2 address:http://192.168.2.243:7574/solr collection:gettingstarted shard:shard1
+INFO  - 2015-08-24 01:52:01.008; [gettingstarted shard2  ] org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard2/election/94281829357649983-core_node1-n_0000000070
+INFO  - 2015-08-24 01:52:01.008; [gettingstarted shard1  ] org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard1/election/94281829357649983-core_node2-n_0000000069
+INFO  - 2015-08-24 01:52:01.017; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 01:52:01.067; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-08-24 01:52:01.067; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 697
+WARN  - 2015-08-24 01:52:01.125; [gettingstarted shard2  ] org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/gettingstarted/leader_elect/shard2/election/94281829357649983-core_node1-n_0000000070
+WARN  - 2015-08-24 01:52:01.125; [gettingstarted shard1  ] org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/gettingstarted/leader_elect/shard1/election/94281829357649983-core_node2-n_0000000069
+INFO  - 2015-08-24 01:52:01.149; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.167; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 01:52:01.167; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 01:52:01.167; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 698 
+INFO  - 2015-08-24 01:52:01.167; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+INFO  - 2015-08-24 01:52:01.186; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-08-24 01:52:01.218; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 01:52:01.230; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 01:52:01.234; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 8, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:01.278; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 01:52:01.279; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 01:52:01.280; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.285; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 01:52:01.285; [   ] org.apache.solr.common.cloud.DefaultConnectionStrategy; Reconnected to ZooKeeper
+INFO  - 2015-08-24 01:52:01.286; [   ] org.apache.solr.common.cloud.ConnectionManager; Connected:true
+INFO  - 2015-08-24 01:52:01.287; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 698
+INFO  - 2015-08-24 01:52:01.292; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.293; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 699 
+INFO  - 2015-08-24 01:52:01.333; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:01.333; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 8, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:01.334; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.358; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 699
+INFO  - 2015-08-24 01:52:01.411; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.411; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 700 
+INFO  - 2015-08-24 01:52:01.490; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 6, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:01.496; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.531; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 700
+INFO  - 2015-08-24 01:52:01.573; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.574; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 701 
+INFO  - 2015-08-24 01:52:01.641; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:01.651; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 5, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:01.652; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.726; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 701
+INFO  - 2015-08-24 01:52:01.751; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.774; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 702 
+INFO  - 2015-08-24 01:52:01.801; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:01.816; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 4, message = {
+  "core":"gettingstarted_shard1_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:01.817; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:01.818; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.821; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 702
+INFO  - 2015-08-24 01:52:01.826; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.835; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 703 
+INFO  - 2015-08-24 01:52:01.881; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 5, message = {
+  "core":"gettingstarted_shard2_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:01.882; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:01.907; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 703
+INFO  - 2015-08-24 01:52:01.914; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.918; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 704 
+INFO  - 2015-08-24 01:52:01.939; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:01.944; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 4, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"gettingstarted"} current state version: 1
+INFO  - 2015-08-24 01:52:01.980; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 704
+INFO  - 2015-08-24 01:52:01.982; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:01.983; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 705 
+INFO  - 2015-08-24 01:52:02.018; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:02.025; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 3, message = {
+  "operation":"leader",
+  "shard":"shard2",
+  "collection":"gettingstarted"} current state version: 1
+INFO  - 2015-08-24 01:52:02.041; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 705
+INFO  - 2015-08-24 01:52:02.045; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:02.046; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 706 
+INFO  - 2015-08-24 01:52:02.059; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:02.059; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 3, message = {
+  "operation":"leader",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "base_url":"http://192.168.2.243:8983/solr",
+  "core":"gettingstarted_shard2_replica1",
+  "state":"active"} current state version: 1
+INFO  - 2015-08-24 01:52:02.076; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 706
+INFO  - 2015-08-24 01:52:02.080; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:02.087; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 707 
+INFO  - 2015-08-24 01:52:02.093; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "base_url":"http://192.168.2.243:8983/solr",
+  "core":"gettingstarted_shard1_replica1",
+  "state":"active"} current state version: 1
+INFO  - 2015-08-24 01:52:02.095; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 707
+INFO  - 2015-08-24 01:52:02.099; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:02.099; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 708 
+INFO  - 2015-08-24 01:52:02.112; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:02.169; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:02.170; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"gettingstarted_shard2_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:02.172; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:02.175; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 708
+INFO  - 2015-08-24 01:52:02.177; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:02.178; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 709 
+INFO  - 2015-08-24 01:52:02.195; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:02.195; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.2.243:8983/solr",
+  "node_name":"192.168.2.243:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:02.230; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 709
+INFO  - 2015-08-24 01:52:02.235; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:02.236; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 710 
+INFO  - 2015-08-24 01:52:02.246; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:02.278; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; We are http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/ and leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-08-24 01:52:02.279; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard1_replica2
+INFO  - 2015-08-24 01:52:02.280; [gettingstarted shard1  ] org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-08-24 01:52:02.284; [gettingstarted shard1  ] org.apache.solr.cloud.ActionThrottle; The last recovery attempt started 18391537ms ago.
+INFO  - 2015-08-24 01:52:02.281; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; We are http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/ and leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-08-24 01:52:02.287; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard2_replica2
+INFO  - 2015-08-24 01:52:02.288; [gettingstarted shard2  ] org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-08-24 01:52:02.289; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard1_replica2 recoveringAfterStartup=false
+INFO  - 2015-08-24 01:52:02.297; [gettingstarted shard2  ] org.apache.solr.cloud.ActionThrottle; The last recovery attempt started 18391131ms ago.
+INFO  - 2015-08-24 01:52:02.298; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard2_replica2 recoveringAfterStartup=false
+INFO  - 2015-08-24 01:52:02.311; [gettingstarted shard1  ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 710 
+INFO  - 2015-08-24 01:52:02.723; [   ] org.apache.solr.cloud.ZkController; Replica core_node2 NOT in leader-initiated recovery, need to wait for leader to see down state.
+INFO  - 2015-08-24 01:52:02.749; [gettingstarted shard2  ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 710 
+ERROR - 2015-08-24 01:52:02.809; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:567)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+INFO  - 2015-08-24 01:52:02.944; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-08-24 01:52:02.948; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 01:52:02.954; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-08-24 01:52:02.955; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 01:52:02.957; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:02.970; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node1&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 01:52:02.986; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 01:52:02.994; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+ERROR - 2015-08-24 01:52:03.014; [gettingstarted shard2  ] org.apache.solr.common.SolrException; Error while trying to recover. core=gettingstarted_shard2_replica2:java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:601)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:364)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:229)
+Caused by: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:567)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:271)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:148)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 7 more
+
+INFO  - 2015-08-24 01:52:03.015; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+ERROR - 2015-08-24 01:52:03.017; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (0) core=gettingstarted_shard2_replica2
+INFO  - 2015-08-24 01:52:03.057; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 710
+ERROR - 2015-08-24 01:52:03.058; [gettingstarted shard1  ] org.apache.solr.common.SolrException; Error while trying to recover. core=gettingstarted_shard1_replica2:java.util.concurrent.ExecutionException: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.solr.cloud.RecoveryStrategy.sendPrepRecoveryCmd(RecoveryStrategy.java:601)
+	at org.apache.solr.cloud.RecoveryStrategy.doRecovery(RecoveryStrategy.java:364)
+	at org.apache.solr.cloud.RecoveryStrategy.run(RecoveryStrategy.java:229)
+Caused by: org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:567)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:271)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient$1.call(HttpSolrClient.java:267)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:148)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 7 more
+
+ERROR - 2015-08-24 01:52:03.060; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Recovery failed - trying again... (0) core=gettingstarted_shard1_replica2
+INFO  - 2015-08-24 01:52:03.060; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:03.058; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Wait 2.0 seconds before trying to recover again (1)
+INFO  - 2015-08-24 01:52:03.060; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Wait 2.0 seconds before trying to recover again (1)
+INFO  - 2015-08-24 01:52:03.075; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 711 
+INFO  - 2015-08-24 01:52:03.087; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:03.088; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:03.091; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 711
+INFO  - 2015-08-24 01:52:03.112; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:03.113; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 712 
+INFO  - 2015-08-24 01:52:03.126; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+ERROR - 2015-08-24 01:52:04.812; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:567)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 01:52:06.817; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Server refused connection at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:567)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.ConnectException: Network is unreachable
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:117)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+INFO  - 2015-08-24 01:52:13.072; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-08-24 01:52:13.076; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 01:52:13.086; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-08-24 01:52:13.086; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 01:52:13.102; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:13.116; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:13.118; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:13.133; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node1&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 01:52:13.133; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 01:52:13.135; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 712
+INFO  - 2015-08-24 01:52:13.149; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:13.159; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 713 
+INFO  - 2015-08-24 01:52:13.226; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:13.226; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:13.249; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 713
+INFO  - 2015-08-24 01:52:13.255; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:13.256; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 714 
+INFO  - 2015-08-24 01:52:13.280; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:20.323; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ core=gettingstarted_shard1_replica2 - recoveringAfterStartup=false
+INFO  - 2015-08-24 01:52:20.323; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ core=gettingstarted_shard2_replica2 - recoveringAfterStartup=false
+INFO  - 2015-08-24 01:52:20.346; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr START replicas=[http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/] nUpdates=100
+INFO  - 2015-08-24 01:52:20.347; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr START replicas=[http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/] nUpdates=100
+INFO  - 2015-08-24 01:52:20.893; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr  Received 95 versions from http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-08-24 01:52:20.894; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr  Our versions are newer. ourLowThreshold=1508509618142183424 otherHigh=1508509849812467712
+INFO  - 2015-08-24 01:52:20.894; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr DONE. sync succeeded
+INFO  - 2015-08-24 01:52:20.897; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-08-24 01:52:20.898; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-08-24 01:52:20.913; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr  Received 95 versions from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-08-24 01:52:20.913; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr Requesting updates from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/n=2 versions=[1508509618102337536, 1508509618084511744]
+INFO  - 2015-08-24 01:52:20.943; [gettingstarted shard1  ] org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-08-24 01:52:20.947; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-08-24 01:52:20.949; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=gettingstarted_shard1_replica2
+INFO  - 2015-08-24 01:52:20.949; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=active collection=gettingstarted
+INFO  - 2015-08-24 01:52:20.965; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 01:52:20.981; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:20.984; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:21.000; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 714
+INFO  - 2015-08-24 01:52:21.014; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:21.030; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 715 
+INFO  - 2015-08-24 01:52:21.033; [gettingstarted shard2  ] org.apache.solr.update.processor.LogUpdateProcessor; [gettingstarted_shard2_replica2] {add=[/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/docs/solr-test-framework/org/apache/solr/cloud/class-use/AbstractZkTestCase.html (1508509618084511744), /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/docs/solr-test-framework/org/apache/solr/cloud/class-use/ChaosMonkey.html (1508509618102337536)]} 0 61
+INFO  - 2015-08-24 01:52:21.033; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr DONE. sync succeeded
+INFO  - 2015-08-24 01:52:21.033; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-08-24 01:52:21.036; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-08-24 01:52:21.037; [gettingstarted shard2  ] org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-08-24 01:52:21.037; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-08-24 01:52:21.037; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=gettingstarted_shard2_replica2
+INFO  - 2015-08-24 01:52:21.037; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=active collection=gettingstarted
+INFO  - 2015-08-24 01:52:21.041; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-24 01:52:21.041; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-24 01:52:21.043; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 715
+INFO  - 2015-08-24 01:52:21.053; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 01:52:21.056; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 716 
+INFO  - 2015-08-24 01:52:21.062; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+ERROR - 2015-08-24 01:54:08.952; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 01:56:11.028; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 01:58:13.085; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 01:58:15.101; [   ] org.apache.solr.common.SolrException; :org.apache.solr.common.SolrException: There was a problem making a request to the leader
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1686)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+
+INFO  - 2015-08-24 01:58:20.110; [   ] org.apache.solr.cloud.ZkController; Replica core_node1 NOT in leader-initiated recovery, need to wait for leader to see down state.
+ERROR - 2015-08-24 02:00:20.167; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 02:02:22.231; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 02:04:24.311; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 02:06:26.370; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 02:08:28.434; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 02:10:30.488; [   ] org.apache.solr.common.SolrException; There was a problem making a request to the leader:org.apache.solr.client.solrj.SolrServerException: Timeout occured while waiting response from server at: http://192.168.2.243:8983/solr
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:570)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:235)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:227)
+	at org.apache.solr.client.solrj.SolrClient.request(SolrClient.java:1220)
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1658)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:160)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:84)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:273)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:283)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:251)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:197)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:685)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:882)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:466)
+	... 12 more
+
+ERROR - 2015-08-24 02:10:32.497; [   ] org.apache.solr.common.SolrException; :org.apache.solr.common.SolrException: There was a problem making a request to the leader
+	at org.apache.solr.cloud.ZkController.waitForLeaderToSeeDownState(ZkController.java:1686)
+	at org.apache.solr.cloud.ZkController.registerAllCoresAsDown(ZkController.java:463)
+	at org.apache.solr.cloud.ZkController.access$100(ZkController.java:112)
+	at org.apache.solr.cloud.ZkController$1.command(ZkController.java:298)
+	at org.apache.solr.common.cloud.ConnectionManager$1.update(ConnectionManager.java:158)
+	at org.apache.solr.common.cloud.DefaultConnectionStrategy.reconnect(DefaultConnectionStrategy.java:56)
+	at org.apache.solr.common.cloud.ConnectionManager.process(ConnectionManager.java:132)
+	at org.apache.zookeeper.ClientCnxn$EventThread.processEvent(ClientCnxn.java:522)
+	at org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:498)
+
+INFO  - 2015-08-24 02:10:37.506; [   ] org.apache.solr.cloud.ElectionContext; canceling election /overseer_elect/election/94281829357649987-192.168.2.243:7574_solr-n_0000000070
+INFO  - 2015-08-24 02:10:37.510; [   ] org.apache.solr.cloud.Overseer; Overseer (id=94281829357649987-192.168.2.243:7574_solr-n_0000000070) closing
+INFO  - 2015-08-24 02:10:37.536; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; Overseer Loop exiting : 192.168.2.243:7574_solr
+INFO  - 2015-08-24 02:10:37.546; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+ERROR - 2015-08-24 02:10:37.548; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; could not read the data
+org.apache.zookeeper.KeeperException$NoNodeException: KeeperErrorCode = NoNode for /overseer_elect/leader
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:111)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.getData(ZooKeeper.java:1155)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:345)
+	at org.apache.solr.common.cloud.SolrZkClient$7.execute(SolrZkClient.java:342)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.getData(SolrZkClient.java:342)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.checkIfIamStillLeader(Overseer.java:298)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater.access$300(Overseer.java:85)
+	at org.apache.solr.cloud.Overseer$ClusterStateUpdater$2.run(Overseer.java:259)
+INFO  - 2015-08-24 02:10:37.553; [   ] org.apache.solr.common.cloud.ZkStateReader; addZkWatch gettingstarted
+INFO  - 2015-08-24 02:10:37.563; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating collection state at /collections/gettingstarted/state.json from ZooKeeper... 
+INFO  - 2015-08-24 02:10:37.568; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 716 
+INFO  - 2015-08-24 02:10:37.568; [   ] org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.2.243:7574_solr
+INFO  - 2015-08-24 02:10:37.571; [   ] org.apache.solr.cloud.ZkController; Found a previous node that still exists while trying to register a new live node /live_nodes/192.168.2.243:7574_solr - removing existing node to create another.
+INFO  - 2015-08-24 02:10:37.571; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.2.243:7574_solr
+INFO  - 2015-08-24 02:10:37.590; [   ] org.apache.solr.cloud.ZkController$RegisterCoreAsync; Registering core gettingstarted_shard1_replica2 afterExpiration? true
+INFO  - 2015-08-24 02:10:37.597; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard1_replica2 address:http://192.168.2.243:7574/solr collection:gettingstarted shard:shard1
+INFO  - 2015-08-24 02:10:37.599; [   ] org.apache.solr.cloud.ZkController$RegisterCoreAsync; Registering core gettingstarted_shard2_replica2 afterExpiration? true
+INFO  - 2015-08-24 02:10:37.600; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard2_replica2 address:http://192.168.2.243:7574/solr collection:gettingstarted shard:shard2
+INFO  - 2015-08-24 02:10:37.598; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 02:10:37.602; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+INFO  - 2015-08-24 02:10:37.600; [gettingstarted shard2  ] org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard2/election/94281829357649987-core_node1-n_0000000073
+INFO  - 2015-08-24 02:10:37.600; [gettingstarted shard1  ] org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard1/election/94281829357649987-core_node2-n_0000000072
+INFO  - 2015-08-24 02:10:37.612; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 02:10:37.615; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 02:10:37.615; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-08-24 02:10:37.620; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 02:10:37.623; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 02:10:37.624; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+INFO  - 2015-08-24 02:10:37.626; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-08-24 02:10:37.632; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 02:10:37.633; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 02:10:37.639; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; We are http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/ and leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-08-24 02:10:37.639; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; We are http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/ and leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-08-24 02:10:37.639; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard2_replica2
+INFO  - 2015-08-24 02:10:37.639; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard1_replica2
+INFO  - 2015-08-24 02:10:37.640; [gettingstarted shard2  ] org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-08-24 02:10:37.643; [gettingstarted shard1  ] org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+WARN  - 2015-08-24 02:10:37.649; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=gettingstarted_shard2_replica2 coreNodeName=core_node1
+WARN  - 2015-08-24 02:10:37.650; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=gettingstarted_shard1_replica2 coreNodeName=core_node2
+INFO  - 2015-08-24 02:10:37.651; [gettingstarted shard1  ] org.apache.solr.cloud.ActionThrottle; The last recovery attempt started 1115395ms ago.
+INFO  - 2015-08-24 02:10:37.651; [gettingstarted shard2  ] org.apache.solr.cloud.ActionThrottle; The last recovery attempt started 1115383ms ago.
+INFO  - 2015-08-24 02:10:37.655; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 02:10:37.658; [   ] org.apache.solr.common.cloud.DefaultConnectionStrategy; Reconnected to ZooKeeper
+INFO  - 2015-08-24 02:10:37.655; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard1_replica2 recoveringAfterStartup=false
+INFO  - 2015-08-24 02:10:37.661; [   ] org.apache.solr.common.cloud.ConnectionManager; Connected:true
+INFO  - 2015-08-24 02:10:37.661; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard2_replica2 recoveringAfterStartup=false
+INFO  - 2015-08-24 02:10:37.680; [gettingstarted shard1  ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 716 
+INFO  - 2015-08-24 02:10:37.686; [gettingstarted shard2  ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 716 
+INFO  - 2015-08-24 02:10:37.704; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-08-24 02:10:37.704; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 02:10:37.710; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-24 02:10:37.715; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-08-24 02:10:37.717; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 02:10:37.723; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:37.725; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 717 
+INFO  - 2015-08-24 02:10:37.725; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:37.729; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 717 
+INFO  - 2015-08-24 02:10:37.739; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node1&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 02:10:37.748; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:37.748; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:37.758; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 718 
+INFO  - 2015-08-24 02:10:37.768; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 718 
+INFO  - 2015-08-24 02:10:37.768; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 02:10:44.848; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ core=gettingstarted_shard1_replica2 - recoveringAfterStartup=false
+INFO  - 2015-08-24 02:10:44.848; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ core=gettingstarted_shard2_replica2 - recoveringAfterStartup=false
+INFO  - 2015-08-24 02:10:44.849; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr START replicas=[http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/] nUpdates=100
+INFO  - 2015-08-24 02:10:44.849; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr START replicas=[http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/] nUpdates=100
+INFO  - 2015-08-24 02:10:44.920; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr  Received 95 versions from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-08-24 02:10:44.930; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr Requesting updates from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/n=2 versions=[1508509618102337536, 1508509618084511744]
+INFO  - 2015-08-24 02:10:44.965; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr  Received 95 versions from http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-08-24 02:10:44.965; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr  Our versions are newer. ourLowThreshold=1508509618142183424 otherHigh=1508509849812467712
+INFO  - 2015-08-24 02:10:44.965; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr DONE. sync succeeded
+INFO  - 2015-08-24 02:10:44.965; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-08-24 02:10:44.966; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-08-24 02:10:44.968; [gettingstarted shard1  ] org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-08-24 02:10:44.969; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-08-24 02:10:44.973; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=gettingstarted_shard1_replica2
+INFO  - 2015-08-24 02:10:44.977; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=active collection=gettingstarted
+INFO  - 2015-08-24 02:10:44.981; [gettingstarted shard2  ] org.apache.solr.update.processor.LogUpdateProcessor; [gettingstarted_shard2_replica2] {add=[/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/docs/solr-test-framework/org/apache/solr/cloud/class-use/AbstractZkTestCase.html (1508509618084511744), /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/docs/solr-test-framework/org/apache/solr/cloud/class-use/ChaosMonkey.html (1508509618102337536)]} 0 12
+INFO  - 2015-08-24 02:10:44.982; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr DONE. sync succeeded
+INFO  - 2015-08-24 02:10:44.986; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-08-24 02:10:44.986; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-08-24 02:10:44.987; [gettingstarted shard2  ] org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-08-24 02:10:44.989; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-08-24 02:10:44.996; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=gettingstarted_shard2_replica2
+INFO  - 2015-08-24 02:10:44.997; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=active collection=gettingstarted
+INFO  - 2015-08-24 02:10:45.007; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:45.007; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:45.009; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 719 
+INFO  - 2015-08-24 02:10:45.016; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 719 
+INFO  - 2015-08-24 02:10:45.019; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:45.025; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 02:10:45.025; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 720 
+INFO  - 2015-08-24 02:10:45.032; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 720 
+INFO  - 2015-08-24 03:55:17.641; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Disconnected type:None path:null path:null type:None
+INFO  - 2015-08-24 03:55:17.649; [   ] org.apache.solr.common.cloud.ConnectionManager; zkClient has disconnected
+INFO  - 2015-08-24 03:55:18.038; [   ] org.apache.solr.cloud.ZkController$WatcherImpl; A node got unwatched for /configs/gettingstarted
+INFO  - 2015-08-24 03:55:18.042; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+WARN  - 2015-08-24 03:55:18.049; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.051; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+INFO  - 2015-08-24 03:55:18.051; [   ] org.apache.solr.cloud.ZkController$WatcherImpl; A node got unwatched for /configs/gettingstarted
+INFO  - 2015-08-24 03:55:18.051; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:Expired type:None path:null path:null type:None
+INFO  - 2015-08-24 03:55:18.066; [   ] org.apache.solr.common.cloud.ConnectionManager; Our previous ZooKeeper session was expired. Attempting to reconnect to recover relationship with ZooKeeper...
+WARN  - 2015-08-24 03:55:18.066; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.086; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+INFO  - 2015-08-24 03:55:18.066; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+WARN  - 2015-08-24 03:55:18.087; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.067; [   ] org.apache.solr.common.cloud.DefaultConnectionStrategy; Connection expired - starting a new one...
+WARN  - 2015-08-24 03:55:18.093; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.140; [   ] org.apache.solr.cloud.ZkController$WatcherImpl; A node got unwatched for /configs/gettingstarted
+INFO  - 2015-08-24 03:55:18.140; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+WARN  - 2015-08-24 03:55:18.141; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.157; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+WARN  - 2015-08-24 03:55:18.157; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.141; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+INFO  - 2015-08-24 03:55:18.141; [   ] org.apache.solr.cloud.ZkController$WatcherImpl; A node got unwatched for /configs/gettingstarted
+INFO  - 2015-08-24 03:55:18.166; [   ] org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+WARN  - 2015-08-24 03:55:18.210; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.214; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+WARN  - 2015-08-24 03:55:18.214; [   ] org.apache.solr.cloud.ZkController$4; listener throws error
+org.apache.solr.common.SolrException: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:163)
+	at org.apache.solr.core.SolrConfig.refreshRequestParams(SolrConfig.java:926)
+	at org.apache.solr.core.SolrCore$11.run(SolrCore.java:2580)
+	at org.apache.solr.cloud.ZkController$4.run(ZkController.java:2376)
+Caused by: org.apache.zookeeper.KeeperException$SessionExpiredException: KeeperErrorCode = Session expired for /configs/gettingstarted/params.json
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:127)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:1045)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:294)
+	at org.apache.solr.common.cloud.SolrZkClient$4.execute(SolrZkClient.java:291)
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:61)
+	at org.apache.solr.common.cloud.SolrZkClient.exists(SolrZkClient.java:291)
+	at org.apache.solr.core.RequestParams.getFreshRequestParams(RequestParams.java:153)
+	... 3 more
+INFO  - 2015-08-24 03:55:18.242; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@54987ae6 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2015-08-24 03:55:18.242; [   ] org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2015-08-24 03:55:18.242; [   ] org.apache.solr.common.cloud.ConnectionManager$1; Connection with ZooKeeper reestablished.
+INFO  - 2015-08-24 03:55:18.242; [   ] org.apache.solr.cloud.ZkController$1; ZooKeeper session re-connected ... refreshing core states after session expiration.
+WARN  - 2015-08-24 03:55:18.247; [   ] org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=gettingstarted_shard1_replica2 coreNodeName=core_node2
+WARN  - 2015-08-24 03:55:18.261; [   ] org.apache.solr.cloud.RecoveryStrategy; Stopping recovery for core=gettingstarted_shard2_replica2 coreNodeName=core_node1
+INFO  - 2015-08-24 03:55:18.261; [gettingstarted   gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=down collection=gettingstarted
+INFO  - 2015-08-24 03:55:18.304; [gettingstarted   gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=down collection=gettingstarted
+INFO  - 2015-08-24 03:55:18.341; [   ] org.apache.solr.cloud.ElectionContext; canceling election /overseer_elect/election/94281829357649987-192.168.2.243:7574_solr-n_0000000072
+WARN  - 2015-08-24 03:55:18.344; [   ] org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /overseer_elect/election/94281829357649987-192.168.2.243:7574_solr-n_0000000072
+INFO  - 2015-08-24 03:55:18.378; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2015-08-24 03:55:18.400; [   ] org.apache.solr.common.cloud.ZkStateReader; addZkWatch gettingstarted
+INFO  - 2015-08-24 03:55:18.401; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating collection state at /collections/gettingstarted/state.json from ZooKeeper... 
+INFO  - 2015-08-24 03:55:18.441; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 720 
+INFO  - 2015-08-24 03:55:18.441; [   ] org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.2.243:7574_solr
+INFO  - 2015-08-24 03:55:18.444; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.2.243:7574_solr
+INFO  - 2015-08-24 03:55:18.451; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 1)
+INFO  - 2015-08-24 03:55:18.458; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 721 
+INFO  - 2015-08-24 03:55:18.485; [   ] org.apache.solr.cloud.ZkController$RegisterCoreAsync; Registering core gettingstarted_shard2_replica2 afterExpiration? true
+INFO  - 2015-08-24 03:55:18.485; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard2_replica2 address:http://192.168.2.243:7574/solr collection:gettingstarted shard:shard2
+INFO  - 2015-08-24 03:55:18.486; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard1_replica2
+INFO  - 2015-08-24 03:55:18.486; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 03:55:18.489; [   ] org.apache.solr.cloud.ZkController$RegisterCoreAsync; Registering core gettingstarted_shard1_replica2 afterExpiration? true
+INFO  - 2015-08-24 03:55:18.489; [gettingstarted shard2  ] org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard2/election/94281829357649987-core_node1-n_0000000074
+INFO  - 2015-08-24 03:55:18.492; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; Register replica - core:gettingstarted_shard1_replica2 address:http://192.168.2.243:7574/solr collection:gettingstarted shard:shard1
+INFO  - 2015-08-24 03:55:18.490; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-08-24 03:55:18.493; [gettingstarted shard1  ] org.apache.solr.cloud.ElectionContext; canceling election /collections/gettingstarted/leader_elect/shard1/election/94281829357649987-core_node2-n_0000000073
+WARN  - 2015-08-24 03:55:18.512; [gettingstarted shard2  ] org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/gettingstarted/leader_elect/shard2/election/94281829357649987-core_node1-n_0000000074
+WARN  - 2015-08-24 03:55:18.512; [gettingstarted shard1  ] org.apache.solr.cloud.ElectionContext; cancelElection did not find election node to remove /collections/gettingstarted/leader_elect/shard1/election/94281829357649987-core_node2-n_0000000073
+INFO  - 2015-08-24 03:55:18.515; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core gettingstarted_shard2_replica2
+INFO  - 2015-08-24 03:55:18.514; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 03:55:18.515; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 03:55:18.515; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-08-24 03:55:18.548; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 03:55:18.553; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:18.553; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 03:55:18.558; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 722 
+INFO  - 2015-08-24 03:55:18.573; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 03:55:18.573; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+INFO  - 2015-08-24 03:55:18.616; [   ] org.apache.solr.schema.ZkIndexSchemaReader; Current schema version 8 is already the latest
+INFO  - 2015-08-24 03:55:18.617; [   ] org.apache.solr.common.cloud.DefaultConnectionStrategy; Reconnected to ZooKeeper
+INFO  - 2015-08-24 03:55:18.617; [   ] org.apache.solr.common.cloud.ConnectionManager; Connected:true
+INFO  - 2015-08-24 03:55:18.617; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:18.628; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 723 
+INFO  - 2015-08-24 03:55:18.848; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:18.863; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 724 
+INFO  - 2015-08-24 03:55:18.879; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:18.891; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 725 
+INFO  - 2015-08-24 03:55:18.898; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:18.904; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 726 
+INFO  - 2015-08-24 03:55:19.056; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:19.057; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 727 
+INFO  - 2015-08-24 03:55:19.062; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:19.063; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 728 
+INFO  - 2015-08-24 03:55:19.115; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:19.122; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 729 
+INFO  - 2015-08-24 03:55:19.123; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:19.124; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 730 
+INFO  - 2015-08-24 03:55:19.579; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; We are http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/ and leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-08-24 03:55:19.579; [gettingstarted shard1  ] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard1_replica2
+INFO  - 2015-08-24 03:55:19.579; [gettingstarted shard1  ] org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-08-24 03:55:19.580; [gettingstarted shard1  ] org.apache.solr.cloud.ActionThrottle; The last recovery attempt started 6268042ms ago.
+INFO  - 2015-08-24 03:55:19.580; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard1_replica2 recoveringAfterStartup=false
+INFO  - 2015-08-24 03:55:19.595; [gettingstarted shard1  ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 730 
+INFO  - 2015-08-24 03:55:19.622; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; We are http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/ and leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-08-24 03:55:19.622; [gettingstarted shard2  ] org.apache.solr.cloud.ZkController; Core needs to recover:gettingstarted_shard2_replica2
+INFO  - 2015-08-24 03:55:19.623; [gettingstarted shard2  ] org.apache.solr.update.DefaultSolrCoreState; Running recovery - first canceling any ongoing recovery
+INFO  - 2015-08-24 03:55:19.627; [gettingstarted shard2  ] org.apache.solr.cloud.ActionThrottle; The last recovery attempt started 6268089ms ago.
+INFO  - 2015-08-24 03:55:19.635; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Starting recovery process.  core=gettingstarted_shard2_replica2 recoveringAfterStartup=false
+INFO  - 2015-08-24 03:55:19.668; [gettingstarted shard2  ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 730 
+INFO  - 2015-08-24 03:55:19.687; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard1_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard1_replica2/
+INFO  - 2015-08-24 03:55:19.687; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 03:55:19.700; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:19.714; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 731 
+INFO  - 2015-08-24 03:55:19.800; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Publishing state of core gettingstarted_shard2_replica2 as recovering, leader is http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ and I am http://192.168.2.243:7574/solr/gettingstarted_shard2_replica2/
+INFO  - 2015-08-24 03:55:19.803; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=recovering collection=gettingstarted
+INFO  - 2015-08-24 03:55:19.825; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard1_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node2&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 03:55:19.879; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:19.847; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Sending prep recovery command to http://192.168.2.243:8983/solr; WaitForState: action=PREPRECOVERY&core=gettingstarted_shard2_replica1&nodeName=192.168.2.243%3A7574_solr&coreNodeName=core_node1&state=recovering&checkLive=true&onlyIfLeader=true&onlyIfLeaderActive=true
+INFO  - 2015-08-24 03:55:19.897; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 732 
+INFO  - 2015-08-24 03:55:26.903; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/ core=gettingstarted_shard1_replica2 - recoveringAfterStartup=false
+INFO  - 2015-08-24 03:55:26.903; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; Attempting to PeerSync from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/ core=gettingstarted_shard2_replica2 - recoveringAfterStartup=false
+INFO  - 2015-08-24 03:55:26.912; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr START replicas=[http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/] nUpdates=100
+INFO  - 2015-08-24 03:55:26.912; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr START replicas=[http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/] nUpdates=100
+INFO  - 2015-08-24 03:55:27.166; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr  Received 95 versions from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/
+INFO  - 2015-08-24 03:55:27.166; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr  Received 95 versions from http://192.168.2.243:8983/solr/gettingstarted_shard1_replica1/
+INFO  - 2015-08-24 03:55:27.166; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr Requesting updates from http://192.168.2.243:8983/solr/gettingstarted_shard2_replica1/n=2 versions=[1508509618102337536, 1508509618084511744]
+INFO  - 2015-08-24 03:55:27.167; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr  Our versions are newer. ourLowThreshold=1508509618142183424 otherHigh=1508509849812467712
+INFO  - 2015-08-24 03:55:27.167; [gettingstarted shard1  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard1_replica2 url=http://192.168.2.243:7574/solr DONE. sync succeeded
+INFO  - 2015-08-24 03:55:27.167; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-08-24 03:55:27.168; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-08-24 03:55:27.204; [gettingstarted shard1  ] org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-08-24 03:55:27.209; [gettingstarted shard1  ] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-08-24 03:55:27.262; [gettingstarted shard1  ] org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=gettingstarted_shard1_replica2
+INFO  - 2015-08-24 03:55:27.274; [gettingstarted shard1  gettingstarted_shard1_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard1_replica2 state=active collection=gettingstarted
+INFO  - 2015-08-24 03:55:27.287; [gettingstarted shard2  ] org.apache.solr.update.processor.LogUpdateProcessor; [gettingstarted_shard2_replica2] {add=[/Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/docs/solr-test-framework/org/apache/solr/cloud/class-use/AbstractZkTestCase.html (1508509618084511744), /Users/admin/Documents/Development/Git/detective-criminal-name-search/external_packages/solr-5.2.1/docs/solr-test-framework/org/apache/solr/cloud/class-use/ChaosMonkey.html (1508509618102337536)]} 0 22
+INFO  - 2015-08-24 03:55:27.287; [gettingstarted shard2  ] org.apache.solr.update.PeerSync; PeerSync: core=gettingstarted_shard2_replica2 url=http://192.168.2.243:7574/solr DONE. sync succeeded
+INFO  - 2015-08-24 03:55:27.290; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-08-24 03:55:27.292; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-08-24 03:55:27.293; [gettingstarted shard2  ] org.apache.solr.core.SolrCore; SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
+INFO  - 2015-08-24 03:55:27.293; [gettingstarted shard2  ] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-08-24 03:55:27.297; [gettingstarted shard2  ] org.apache.solr.cloud.RecoveryStrategy; PeerSync Recovery was successful - registering as Active. core=gettingstarted_shard2_replica2
+INFO  - 2015-08-24 03:55:27.297; [gettingstarted shard2  gettingstarted_shard2_replica2] org.apache.solr.cloud.ZkController; publishing core=gettingstarted_shard2_replica2 state=active collection=gettingstarted
+INFO  - 2015-08-24 03:55:27.319; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:27.330; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 733 
+INFO  - 2015-08-24 03:55:27.345; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-24 03:55:27.351; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 734 
