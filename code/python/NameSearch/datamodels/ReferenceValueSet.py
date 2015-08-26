@@ -1,17 +1,15 @@
 __author__ = 'e-budur'
 import xml.etree.ElementTree as ET
+from CustomXmlElement import *
 
-class ReferenceValueSet:
-
+class ReferenceValueSet(CustomXmlElement):
 
     def __init__(self, root, namespace) :
-        self.root = root
-        self.ns = namespace
-        self.__load()
+        super(ReferenceValueSet, self).__init__(root, namespace)
 
     def __load(self):
 
-        self.node = self.__select_node('ReferenceValueSets')
+        self.node = self._select_node('ReferenceValueSets')
         self.AliasTypeValues = self.__loadReferenceEntities('AliasType');
         self.AreaCodeValues = self.__loadReferenceEntities('AreaCode');
         self.AreaCodeTypeValues = self.__loadReferenceEntities('AreaCodeType');
@@ -50,11 +48,6 @@ class ReferenceValueSet:
         self.TargetTypeValues = self.__loadReferenceEntities('TargetType');
         self.ValidityValues = self.__loadReferenceEntities('Validity');
 
-    def __select_node(self, tag_name):
-        namespace_tag = self.ns.keys()[0]
-        node = self.root.findall(namespace_tag+':'+tag_name, self.ns)[0]
-        return node
-
     def __loadReferenceEntities(self, selectedNodeName):
 
         entity_dict = {}
@@ -68,6 +61,3 @@ class ReferenceValueSet:
             entity_dict[id] = data_set
 
         return entity_dict
-
-    def print_filepath(self):
-        print self.filepath

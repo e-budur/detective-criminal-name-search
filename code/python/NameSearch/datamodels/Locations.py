@@ -1,124 +1,77 @@
 __author__ = 'e-budur'
 import xml.etree.ElementTree as ET
+from CustomXmlElement import *
 
-
-class Locations(object):
+class Locations(CustomXmlElement):
 
     def __init__(self, root, namespace) :
-        self.root = root
-        self.ns = namespace
-        self.__load()
+        super(Locations, self).__init__(root, namespace)
 
-    def __load(self):
+    def _load(self):
 
-        self.node = self.__select_node('Locations')
+        self.node = self._select_node('Locations')
 
         self.List = {};
 
-        for child_node in self.__select_children('Location'):
+        for child_node in self._select_children('Location'):
             id = child_node.attrib['ID']
             data_set = child_node.attrib
             data_set['Location'] = Location(child_node, self.ns)
             self.List[id] = data_set
 
-    def __select_children(self, tag_name):
-        namespace_tag = self.ns.keys()[0]
-        return self.node.findall(namespace_tag+':'+tag_name, self.ns)
 
-    def __select_node(self, tag_name):
-        namespace_tag = self.ns.keys()[0]
-        node = self.root.findall(namespace_tag+':'+tag_name, self.ns)[0]
-        return node
+class Location(CustomXmlElement):
 
+    def __init__(self, root, namespace) :
+        super(Location, self).__init__(root, namespace)
 
+    def _load(self):
 
-class Location(Locations):
-    ID = 0
-    LocationAreaCodeId = 0
-    Country = 0
-
-    def __init__(self, node, namespace) :
-        self.node = node
-        self.ns = namespace
-        self.__load()
-
-    def __load(self):
-
-        child = self.__get_node('LocationAreaCode')
+        child = self._get_node('LocationAreaCode')
         self.LocationAreaCodeId = int(child.attrib['AreaCodeID'])
 
-        child = self.__get_node('LocationCountry')
+        child = self._get_node('LocationCountry')
         self.Country = Country(child, self.ns)
 
-        child = self.__get_node('LocationPart')
+        child = self._get_node('LocationPart')
         self.LocationPart = LocationPart(child, self.ns)
 
 
-    def __get_node(self, tag):
-        namespace_tag = self.ns.keys()[0]
-        xpath_str = namespace_tag+':'+tag
-        child = self.node.findall(xpath_str, self.ns)[0]
-        return child
+class Country(CustomXmlElement):
 
-class Country(Location):
-    CountryID = 0
-    CountryRelevanceID = 0
+    def __init__(self, root, namespace) :
+        super(Country, self).__init__(root, namespace)
 
-    def __init__(self, node, namespace) :
-        self.node = node
-        self.ns = namespace
-        self.__load()
+    def _load(self):
+        self.CountryID = self._get_attrib_int('CountryID')
+        self.CountryRelevanceID =  self._get_attrib_int('CountryRelevanceID')
 
-    def __load(self):
-        self.CountryID = int(self.node.attrib['CountryID'])
-        self.CountryRelevanceID = int(self.node.attrib['CountryRelevanceID'])
-
-class LocationPart(Location):
-    LocPartTypeID = 0
+class LocationPart(CustomXmlElement):
     LocationPartValues = []
 
-    def __init__(self, node, namespace) :
-        self.node = node
-        self.ns = namespace
-        self.__load()
+    def __init__(self, root, namespace) :
+        super(LocationPart, self).__init__(root, namespace)
 
-    def __load(self):
+    def _load(self):
 
-        self.LocPartTypeID = int(self.node.attrib['LocPartTypeID'])
-        child = self.__get_node('LocationPartValue')
-        self.LocationPartValue  = LocationPartValue(child, self.ns)
-
-    def __get_node(self, tag):
-        namespace_tag = self.ns.keys()[0]
-        xpath_str = namespace_tag+':'+tag
-        child = self.node.findall(xpath_str, self.ns)[0]
-        return child
+        self.LocPartTypeID = self._get_attrib_int('LocPartTypeID')
+        for child in self._select_children('LocationPartValue'):
+            lpv = LocationPartValue(child, self.ns)
+            self.LocationPartValues.append(lpv)
 
 
-class LocationPartValue(LocationPart):
-    Primary = False
-    LocPartValueTypeID = 0
-    LocPartValueStatusID = 0
-    Comment = ""
-    Value = ""
+class LocationPartValue(CustomXmlElement):
 
-    def __init__(self, node, namespace) :
-        self.node = node
-        self.ns = namespace
-        self.__load()
+    def __init__(self, root, namespace) :
+        super(LocationPartValue, self).__init__(root, namespace)
 
-    def __load(self):
+    def _load(self):
 
-        self.Primary = self.node.attrib['Primary'].lower() == 'true'
-        self.LocPartValueTypeID = int(self.node.attrib['LocPartValueTypeID'])
-        self.LocPartValueStatusID = int(self.node.attrib['LocPartValueStatusID'])
+        self.Primary = self._get_attrib_bool('Primary')
+        self.LocPartValueTypeID = self._get_attrib_int('LocPartValueTypeID')
+        self.LocPartValueStatusID = self._get_attrib_int('LocPartValueStatusID')
 
-        self.Comment = self.__get_node_text('Comment')
-        self.Value = self.__get_node_text('Value')
+        self.Comment = self._get_node_text('Comment')
+        self.Value = self._get_node_text('Value')
 
 
-    def __get_node_text(self, tag):
-        namespace_tag = self.ns.keys()[0]
-        xpath_str = namespace_tag+':'+tag
-        child = self.node.findall(xpath_str, self.ns)[0]
-        return child.text

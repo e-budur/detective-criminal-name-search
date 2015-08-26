@@ -86,3 +86,7 @@ class CustomXmlElement(object):
             return False
 
         return self.root.attrib[attribName].lower() == 'true'
+
+    def _select_children(self, tag_name):
+        namespace_tag = self.ns.keys()[0]
+        return self.root.findall(namespace_tag+':'+tag_name, self.ns)
