@@ -16,7 +16,7 @@ class BlacklistEntityParser():
         blacklistEntity.PartySubType = self.__readPartySubType(distinctParty)
         blacklistEntity.Names = self.__readNames(distinctParty)
         blacklistEntity.Features = self.__readFeatures(distinctParty)
-
+        blacklistEntity.Relationships = self.__readUndirectedRelationships(distinctParty)
         #self.__print(blacklistEntity)
 
         return blacklistEntity
@@ -37,6 +37,13 @@ class BlacklistEntityParser():
             names.append(name)
 
         return names
+
+    def __readUndirectedRelationships(self, distinctParty):
+        relationships = []
+
+        if distinctParty.Profile.ID not in self.db.ProfileRelationships.UndirectedList.keys():
+            return relationships
+        return self.db.ProfileRelationships.UndirectedList[distinctParty.Profile.ID]
 
     def __readFeatures(self, distinctParty):
         features = []
@@ -93,4 +100,4 @@ class BlacklistEntityParser():
         return location
 
     def __print(self, blacklistEntity):
-        print blacklistEntity.Names, blacklistEntity.Features, blacklistEntity.PartySubType
+        print blacklistEntity.Names, blacklistEntity.Features, blacklistEntity.Relationships, blacklistEntity.PartySubType

@@ -1,6 +1,0 @@
-['AEROCARIBBEAN AIRLINES', 'AERO-CARIBBEAN'] [{'Comment': None, 'FeatureType': 'Location', 'IdentityFeatureLinkTypeID': 0, 'DetailType': '', 'Reliability': 'Unknown', 'Location': {'AreaCode': 'CU', 'CountryName': 'Cuba', 'CountryISO2': 'CU', 'Description': 'Cuba'}, 'IdentityReferenceID': 0, 'Details': ''}] Unknown 
-
-['AEROTAXI EJECUTIVO, S.A.'] [{'Comment': None, 'FeatureType': 'Location', 'IdentityFeatureLinkTypeID': 0, 'DetailType': '', 'Reliability': 'Unknown', 'Location': {'AreaCode': 'NI', 'CountryName': 'Nicaragua', 'CountryISO2': 'NI', 'Description': 'Nicaragua'}, 'IdentityReferenceID': 0, 'Details': ''}] Unknown 
-
-['AGUIAR Raul'] [{'Comment': None, 'FeatureType': 'Location', 'IdentityFeatureLinkTypeID': 0, 'DetailType': '', 'Reliability': 'Unknown', 'Location': '', 'IdentityReferenceID': 0, 'Details': ''}, {'Comment': None, 'FeatureType': 'Title', 'IdentityFeatureLinkTypeID': 0, 'DetailType': 'TEXT', 'Reliability': 'Unknown', 'Location': '', 'IdentityReferenceID': 0, 'Details': 'Director, Banco Nacional de Cuba'}] Unknown 
-

@@ -38,3 +38,6 @@ class SDN_Memory_Database:
             blacklistEntity = blacklistEntityParser.parse(distinctParty)
             yield blacklistEntity
         pass
+
+    def getUndirectedRelationships(self):
+        return self.ProfileRelationships.UndirectedList

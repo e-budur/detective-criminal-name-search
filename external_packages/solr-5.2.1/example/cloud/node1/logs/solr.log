@@ -1700,3 +1700,627 @@ INFO  - 2015-08-30 19:27:11.800; [   ] org.apache.solr.cloud.overseer.ZkStateWri
 INFO  - 2015-08-30 19:27:11.806; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
 INFO  - 2015-08-30 19:27:11.810; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1338 
 INFO  - 2015-08-30 19:27:11.822; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:32:12.160; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:32:12.167; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:32:12.176; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:32:12.182; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1338
+INFO  - 2015-08-30 19:32:12.184; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:32:12.185; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1339 
+INFO  - 2015-08-30 19:32:13.150; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:32:13.150; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:32:13.151; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:32:13.153; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1339
+INFO  - 2015-08-30 19:32:13.160; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:32:13.174; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1340 
+INFO  - 2015-08-30 19:37:12.500; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:37:12.513; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:37:12.522; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:37:12.551; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1340
+INFO  - 2015-08-30 19:37:12.569; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:37:12.592; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1341 
+INFO  - 2015-08-30 19:37:13.713; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:37:13.714; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:37:13.717; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:37:13.726; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1341
+INFO  - 2015-08-30 19:37:13.729; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:37:13.734; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1342 
+INFO  - 2015-08-30 19:42:12.861; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:42:12.869; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:42:12.870; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:42:12.877; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1342
+INFO  - 2015-08-30 19:42:12.884; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:42:12.887; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1343 
+INFO  - 2015-08-30 19:42:14.723; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:42:14.727; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:42:14.733; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:42:14.750; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1343
+INFO  - 2015-08-30 19:42:14.753; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:42:14.755; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1344 
+INFO  - 2015-08-30 19:47:13.302; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:47:13.312; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:47:13.323; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:47:13.333; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1344
+INFO  - 2015-08-30 19:47:13.334; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:47:13.342; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1345 
+INFO  - 2015-08-30 19:47:15.065; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:47:15.066; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:47:15.069; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:47:15.072; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1345
+INFO  - 2015-08-30 19:47:15.076; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:47:15.079; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1346 
+INFO  - 2015-08-30 19:52:13.894; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:52:13.916; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:52:13.924; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:52:13.969; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1346
+INFO  - 2015-08-30 19:52:13.973; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:52:13.974; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1347 
+INFO  - 2015-08-30 19:52:16.278; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:52:16.283; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:52:16.293; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:52:16.301; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1347
+INFO  - 2015-08-30 19:52:16.307; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:52:16.309; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1348 
+INFO  - 2015-08-30 19:57:14.215; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:57:14.224; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:57:14.231; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:57:14.248; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1348
+INFO  - 2015-08-30 19:57:14.255; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:57:14.256; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1349 
+INFO  - 2015-08-30 19:57:17.131; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 19:57:17.136; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 19:57:17.136; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 19:57:17.140; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1349
+INFO  - 2015-08-30 19:57:17.143; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 19:57:17.145; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1350 
+INFO  - 2015-08-30 20:02:14.688; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:02:14.707; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:02:14.725; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:02:14.743; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1350
+INFO  - 2015-08-30 20:02:14.749; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:02:14.768; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1351 
+INFO  - 2015-08-30 20:02:17.441; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:02:17.442; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:02:17.442; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:02:17.457; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1351
+INFO  - 2015-08-30 20:02:17.467; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:02:17.469; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1352 
+INFO  - 2015-08-30 20:07:15.401; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:07:15.433; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:07:15.441; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:07:15.460; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1352
+INFO  - 2015-08-30 20:07:15.470; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:07:15.478; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1353 
+INFO  - 2015-08-30 20:07:17.736; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:07:17.749; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:07:17.758; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:07:17.762; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1353
+INFO  - 2015-08-30 20:07:17.763; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:07:17.774; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1354 
+INFO  - 2015-08-30 20:12:16.584; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:12:16.596; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:12:16.600; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:12:16.608; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1354
+INFO  - 2015-08-30 20:12:16.616; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:12:16.623; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1355 
+INFO  - 2015-08-30 20:12:18.794; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:12:18.795; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:12:18.796; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:12:18.800; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1355
+INFO  - 2015-08-30 20:12:18.805; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:12:18.810; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1356 
+INFO  - 2015-08-30 20:17:17.114; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:17:17.120; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:17:17.122; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:17:17.137; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1356
+INFO  - 2015-08-30 20:17:17.146; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:17:17.157; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1357 
+INFO  - 2015-08-30 20:17:19.858; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:17:19.865; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:17:19.865; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:17:19.882; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1357
+INFO  - 2015-08-30 20:17:19.887; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:17:19.891; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1358 
+INFO  - 2015-08-30 20:22:17.464; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:22:17.480; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:22:17.485; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:22:17.501; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1358
+INFO  - 2015-08-30 20:22:17.505; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:22:17.517; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1359 
+INFO  - 2015-08-30 20:22:20.904; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:22:20.905; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:22:20.909; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:22:20.931; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1359
+INFO  - 2015-08-30 20:22:20.935; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:22:20.941; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1360 
+INFO  - 2015-08-30 20:27:17.805; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:27:17.818; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:27:17.828; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard2_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:27:17.850; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1360
+INFO  - 2015-08-30 20:27:17.859; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:27:17.885; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1361 
+INFO  - 2015-08-30 20:27:21.205; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-08-30 20:27:21.209; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"} current state version: 1
+INFO  - 2015-08-30 20:27:21.212; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"gettingstarted_shard1_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.2.243:7574/solr",
+  "node_name":"192.168.2.243:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"gettingstarted",
+  "operation":"state"}
+INFO  - 2015-08-30 20:27:21.223; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/gettingstarted/state.json version: 1361
+INFO  - 2015-08-30 20:27:21.228; [   ] org.apache.solr.common.cloud.ZkStateReader$7; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json for collection gettingstarted has occurred - updating... (live nodes size: 2)
+INFO  - 2015-08-30 20:27:21.244; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for gettingstarted to ver 1362 
