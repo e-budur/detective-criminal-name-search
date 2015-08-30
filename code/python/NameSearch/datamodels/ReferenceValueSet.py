@@ -7,7 +7,7 @@ class ReferenceValueSet(CustomXmlElement):
     def __init__(self, root, namespace) :
         super(ReferenceValueSet, self).__init__(root, namespace)
 
-    def __load(self):
+    def _load(self):
 
         self.node = self._select_node('ReferenceValueSets')
         self.AliasTypeValues = self.__loadReferenceEntities('AliasType');

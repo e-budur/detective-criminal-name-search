@@ -17,12 +17,12 @@ class IDRegDocuments(CustomXmlElement):
             self.List[id] = data_set
 
 
-class IDRegDocument(IDRegDocuments):
+class IDRegDocument(CustomXmlElement):
 
     def __init__(self, root, namespace) :
         super(IDRegDocument, self).__init__(root, namespace)
 
-    def __load(self):
+    def _load(self):
 
         self.ID = self._get_attrib_int('ID')
         self.IDRegDocTypeID = self._get_attrib_int('IDRegDocTypeID')

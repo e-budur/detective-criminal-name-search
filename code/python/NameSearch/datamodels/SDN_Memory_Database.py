@@ -6,6 +6,8 @@ from IDRegDocuments import *
 from DistinctParties import *
 from ProfileRelationships import *
 from SanctionsEntries import *
+from BlacklistEntity import *
+from BlacklistEntityParser import *
 
 class SDN_Memory_Database:
 
@@ -25,8 +27,14 @@ class SDN_Memory_Database:
         self.ReferenceValueSet = ReferenceValueSet(self.root, self.ns)
         self.Locations = Locations(self.root, self.ns)
         self.IDRegDocuments = IDRegDocuments(self.root, self.ns)
-
         self.DistinctParties = DistinctParties(self.root, self.ns)
-
         self.ProfileRelationships = ProfileRelationships(self.root, self.ns)
         self.SanctionsEntries = SanctionsEntries(self.root, self.ns)
+
+    def getBlacklistEntities(self):
+
+        blacklistEntityParser = BlacklistEntityParser(self)
+        for distinctParty in self.DistinctParties.Profiles:
+            blacklistEntity = blacklistEntityParser.parse(distinctParty)
+            yield blacklistEntity
+        pass

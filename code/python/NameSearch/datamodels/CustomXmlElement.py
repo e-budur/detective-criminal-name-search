@@ -88,5 +88,21 @@ class CustomXmlElement(object):
         return self.root.attrib[attribName].lower() == 'true'
 
     def _select_children(self, tag_name):
+        if self.root == None:
+            return []
+
         namespace_tag = self.ns.keys()[0]
         return self.root.findall(namespace_tag+':'+tag_name, self.ns)
+
+    def _select_children_of_child(self, child_tag_name, grand_children_tag_name):
+
+        namespace_tag = self.ns.keys()[0]
+        xpath_str = namespace_tag+':'+child_tag_name
+
+        nodes = self.root.findall(xpath_str, self.ns)
+        if nodes == None or len(nodes) == 0:
+            return None
+
+        node = nodes[0]
+
+        return node.findall(namespace_tag+':'+grand_children_tag_name, self.ns)

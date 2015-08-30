@@ -9,15 +9,14 @@ class Locations(CustomXmlElement):
 
     def _load(self):
 
-        self.node = self._select_node('Locations')
-
         self.List = {};
 
-        for child_node in self._select_children('Location'):
+        for child_node in self._select_children_of_child('Locations', 'Location'):
             id = child_node.attrib['ID']
             data_set = child_node.attrib
             data_set['Location'] = Location(child_node, self.ns)
             self.List[id] = data_set
+
 
 
 class Location(CustomXmlElement):
@@ -27,8 +26,7 @@ class Location(CustomXmlElement):
 
     def _load(self):
 
-        child = self._get_node('LocationAreaCode')
-        self.LocationAreaCodeId = int(child.attrib['AreaCodeID'])
+        self.LocationAreaCodeId = self._get_node_attrib_int('LocationAreaCode', 'AreaCodeID')
 
         child = self._get_node('LocationCountry')
         self.Country = Country(child, self.ns)

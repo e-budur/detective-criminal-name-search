@@ -45,8 +45,10 @@ class Profile(CustomXmlElement):
         node = self._get_node('Identity')
         self.Identity = Identity(node, self.ns)
 
-        node = self._get_node('Feature')
-        self.Feature = Feature(node, self.ns)
+        self.Features = []
+        for node in self._select_children('Feature'):
+            feature = Feature(node, self.ns)
+            self.Features.append(feature)
 
 class Identity(CustomXmlElement):
 
@@ -69,10 +71,16 @@ class Identity(CustomXmlElement):
 
         namespace_tag = self.ns.keys()[0]
         xpath_str = namespace_tag+':NamePartGroups/'+namespace_tag+':MasterNamePartGroup/'+namespace_tag+':NamePartGroup'
-        self.NamePartGroups = [];
+        self.NamePartGroups = {};
         for child_node in self.root.findall(xpath_str, self.ns):
             namePartGroup = NamePartGroup(child_node, self.ns)
-            self.NamePartGroups.append(namePartGroup)
+            self.__appendNamePart(namePartGroup)
+
+    def __appendNamePart(self, namePartGroup):
+        nameParts = [];
+        if namePartGroup.NamePartTypeID not in self.NamePartGroups.keys():
+            self.NamePartGroups[namePartGroup.NamePartTypeID] = nameParts
+        self.NamePartGroups[namePartGroup.NamePartTypeID].append(namePartGroup)
 
 class Alias(CustomXmlElement):
 
@@ -85,7 +93,8 @@ class Alias(CustomXmlElement):
         self.AliasTypeID = self._get_attrib_int('AliasTypeID')
         self.Primary = self._get_attrib_bool('Primary')
         self.LowQuality = self._get_attrib_bool('LowQuality')
-
+        node = self._get_node('DocumentedName')
+        self.DocumentedName = DocumentedName(node, self.ns)
 
 class DocumentedName(CustomXmlElement):
 
@@ -153,6 +162,8 @@ class FeatureVersion(CustomXmlElement):
         self.ID = self._get_attrib_int('ID')
         self.ReliabilityID = self._get_attrib_int('ReliabilityID')
         self.Comment = self._get_node_text('Comment')
+        self.VersionDetails = self._get_node_text('VersionDetail')
+        self.VersionDetailTypeID = self._get_node_attrib_int('VersionDetail', 'DetailTypeID')
         self.VersionLocationID = self._get_node_attrib_int('VersionLocation', 'LocationID')
         self.IdentityReferenceID = self._get_node_attrib_int('IdentityReference', 'IdentityID')
         self.IdentityFeatureLinkTypeID = self._get_node_attrib_int('IdentityReference', 'IdentityFeatureLinkTypeID')
