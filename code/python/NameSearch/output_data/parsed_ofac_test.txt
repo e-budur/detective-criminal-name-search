@@ -1,6 +1,0 @@
-Names: ['AEROCARIBBEAN AIRLINES', 'AERO-CARIBBEAN'] Features: [{'Comment': None, 'FeatureType': 'Location', 'DetailType': '', 'Reliability': 'Unknown', 'Location': {'AreaCode': 'CU', 'CountryName': 'Cuba', 'CountryISO2': 'CU', 'Description': 'Cuba'}, 'Details': ''}] PartySubType: Unknown Relationships: [] 
-
-Names: ['AEROTAXI EJECUTIVO, S.A.'] Features: [{'Comment': None, 'FeatureType': 'Location', 'DetailType': '', 'Reliability': 'Unknown', 'Location': {'AreaCode': 'NI', 'CountryName': 'Nicaragua', 'CountryISO2': 'NI', 'Description': 'Nicaragua'}, 'Details': ''}] PartySubType: Unknown Relationships: [] 
-
-Names: ['AGUIAR Raul'] Features: [{'Comment': None, 'FeatureType': 'Location', 'DetailType': '', 'Reliability': 'Unknown', 'Location': '', 'Details': ''}, {'Comment': None, 'FeatureType': 'Title', 'DetailType': 'TEXT', 'Reliability': 'Unknown', 'Location': '', 'Details': 'Director, Banco Nacional de Cuba'}] PartySubType: Unknown Relationships: [] 
-
