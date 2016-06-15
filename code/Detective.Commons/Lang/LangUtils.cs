@@ -11,12 +11,12 @@ namespace Detective.Commons.Lang
     {
         public static string NormalizeString(this string input)
         {
-            return input.ToLower(new CultureInfo("en-US"));
+            return input.ToLower(new CultureInfo("en-US")).Trim();
         }
 
         public static string[] SplitString(this string input)
         {
-            return input.Split(" ,?-;:./\\()[]".ToCharArray());
+            return input.Split(" ,?-;:./\\()[]".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }

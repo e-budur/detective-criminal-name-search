@@ -10,5 +10,6 @@ namespace Detective.Index
     {
 
         void Index(int id, string name);
+        void Complete();
     }
 }

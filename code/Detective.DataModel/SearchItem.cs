@@ -18,5 +18,11 @@ namespace Detective.DataModel
 
         [DataMember]
         public string Fullname;
+
+        [DataMember]
+        public int Score;
+
+        [DataMember]
+        public SDNItem SDN;
     }
 }

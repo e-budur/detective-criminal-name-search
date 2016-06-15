@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Index", "Detective.Index\Detective.Index.csproj", "{AA2CA242-B5AF-434C-B52D-4F61E07CEF4D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.DataModel", "Detective.DataModel\Detective.DataModel.csproj", "{C60B1FD6-6DE6-496F-969F-502CC9FEF6F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Feeder", "Detective.Feeder\Detective.Feeder.csproj", "{CCF11541-F428-4F3F-A50C-40F7E395C273}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Rank", "Detective.Rank\Detective.Rank.csproj", "{953A06AF-2CE7-4344-ACDA-ECA630542347}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Web", "Detective.Web\Detective.Web.csproj", "{65EEA5B8-435C-473E-B239-49337F993EC4}"
 EndProject
@@ -26,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Search", "Detective.Search\Detective.Search.csproj", "{151F5571-9290-4927-931A-8476E7DBDD40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Commons", "Detective.Commons\Detective.Commons.csproj", "{8CD23BB6-657A-494F-AE8D-D43883B75757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Detective.Noodle", "Detective.Noodle\Detective.Noodle.csproj", "{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +45,6 @@ Global
 		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF11541-F428-4F3F-A50C-40F7E395C273}.Release|Any CPU.Build.0 = Release|Any CPU
-		{953A06AF-2CE7-4344-ACDA-ECA630542347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{953A06AF-2CE7-4344-ACDA-ECA630542347}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{953A06AF-2CE7-4344-ACDA-ECA630542347}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{953A06AF-2CE7-4344-ACDA-ECA630542347}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65EEA5B8-435C-473E-B239-49337F993EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65EEA5B8-435C-473E-B239-49337F993EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65EEA5B8-435C-473E-B239-49337F993EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,6 +75,10 @@ Global
 		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CD23BB6-657A-494F-AE8D-D43883B75757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7AE0F4-1076-4E33-9D8C-05B9C84A60D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,32 +97,32 @@ Global
 		SccProjectUniqueName3 = Detective.Feeder\\Detective.Feeder.csproj
 		SccProjectName3 = Detective.Feeder
 		SccLocalPath3 = Detective.Feeder
-		SccProjectUniqueName4 = Detective.Rank\\Detective.Rank.csproj
-		SccProjectName4 = Detective.Rank
-		SccLocalPath4 = Detective.Rank
-		SccProjectUniqueName5 = Detective.Web\\Detective.Web.csproj
-		SccProjectName5 = Detective.Web
-		SccLocalPath5 = Detective.Web
-		SccProjectUniqueName6 = Detective.Web.Tests\\Detective.Web.Tests.csproj
-		SccProjectName6 = Detective.Web.Tests
-		SccLocalPath6 = Detective.Web.Tests
-		SccProjectUniqueName7 = Detective.Api\\Detective.Api.csproj
-		SccProjectName7 = Detective.Api
-		SccLocalPath7 = Detective.Api
-		SccProjectUniqueName8 = Detective.Setup\\Detective.Setup.vdproj
-		SccProjectName8 = Detective.Setup
-		SccLocalPath8 = Detective.Setup
-		SccProjectUniqueName9 = Detective.Test.Playground\\Detective.Test.Playground.csproj
-		SccProjectName9 = Detective.Test.Playground
-		SccLocalPath9 = Detective.Test.Playground
-		SccProjectUniqueName10 = Detective.Data\\Detective.Data.csproj
-		SccProjectName10 = Detective.Data
-		SccLocalPath10 = Detective.Data
-		SccProjectUniqueName11 = Detective.Search\\Detective.Search.csproj
-		SccProjectName11 = Detective.Search
-		SccLocalPath11 = Detective.Search
-		SccProjectUniqueName12 = Detective.Commons\\Detective.Commons.csproj
-		SccProjectName12 = Detective.Commons
-		SccLocalPath12 = Detective.Commons
+		SccProjectUniqueName4 = Detective.Web\\Detective.Web.csproj
+		SccProjectName4 = Detective.Web
+		SccLocalPath4 = Detective.Web
+		SccProjectUniqueName5 = Detective.Web.Tests\\Detective.Web.Tests.csproj
+		SccProjectName5 = Detective.Web.Tests
+		SccLocalPath5 = Detective.Web.Tests
+		SccProjectUniqueName6 = Detective.Api\\Detective.Api.csproj
+		SccProjectName6 = Detective.Api
+		SccLocalPath6 = Detective.Api
+		SccProjectUniqueName7 = Detective.Setup\\Detective.Setup.vdproj
+		SccProjectName7 = Detective.Setup
+		SccLocalPath7 = Detective.Setup
+		SccProjectUniqueName8 = Detective.Test.Playground\\Detective.Test.Playground.csproj
+		SccProjectName8 = Detective.Test.Playground
+		SccLocalPath8 = Detective.Test.Playground
+		SccProjectUniqueName9 = Detective.Data\\Detective.Data.csproj
+		SccProjectName9 = Detective.Data
+		SccLocalPath9 = Detective.Data
+		SccProjectUniqueName10 = Detective.Search\\Detective.Search.csproj
+		SccProjectName10 = Detective.Search
+		SccLocalPath10 = Detective.Search
+		SccProjectUniqueName11 = Detective.Commons\\Detective.Commons.csproj
+		SccProjectName11 = Detective.Commons
+		SccLocalPath11 = Detective.Commons
+		SccProjectUniqueName12 = Detective.Noodle\\Detective.Noodle.csproj
+		SccProjectName12 = Detective.Noodle
+		SccLocalPath12 = Detective.Noodle
 	EndGlobalSection
 EndGlobal

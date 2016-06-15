@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Detective.Search.Utils;
 
 namespace Detective.Query.Searchers
 {
@@ -20,6 +21,7 @@ namespace Detective.Query.Searchers
         public int IndexOfName;
         private QueryTerm queryTerm;
         public double MaxAllowedEditCost;
+        public double CurrentNameLength;
 
         public double SimilarityDistance
         {
@@ -38,7 +40,7 @@ namespace Detective.Query.Searchers
         }
         public int QueryLength { get { return this.queryTerm.Term.Length; } }
 
-        public TrieSearchParams(QueryTerm queryTerm)
+        public TrieSearchParams(QueryTerm queryTerm) : this()
         {
             this.CurrentNode = null;
             this.queryTerm = queryTerm;
@@ -54,7 +56,9 @@ namespace Detective.Query.Searchers
 
             this.CandidateRecordSet = new CandidateRecordSet();
 
-            this.MaxAllowedEditCost = 1;
+            this.CurrentNameLength = 1;
+
+            this.SetMaxEditCost(QueryLength);
         }
 
         internal void InitNextRowSetting()
@@ -62,6 +66,15 @@ namespace Detective.Query.Searchers
             this.PreviousRow = CurrentRow;
             this.CurrentRow = new double[this.PreviousRow.Length];
             this.CurrentRow[0] = this.PreviousRow[0] + 1;
+        }
+
+        internal void SetMaxEditCost(int termLength)
+        {
+            if (termLength < GlobalSearchParams.MAX_EDIT_COSTS.Length)
+                this.MaxAllowedEditCost = GlobalSearchParams.MAX_EDIT_COSTS[termLength];
+            else
+                this.MaxAllowedEditCost = GlobalSearchParams.DEFAULT_MAX_EDIT_COST;
+
         }
 
     }

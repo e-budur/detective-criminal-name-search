@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Detective.Search.Algorithms;
+using Detective.Search.Utils;
 
 namespace Detective.Search.Trie
 {
@@ -34,6 +36,7 @@ namespace Detective.Search.Trie
             foreach (var childChar in MemoryDB.RootNode.Keys)
             {
                 searchParams.CurrentNode = MemoryDB.RootNode[childChar];
+
                 Search(searchParams);
             }
 
@@ -41,37 +44,45 @@ namespace Detective.Search.Trie
         }
 
         
-        private void Search(TrieSearchParams searchParams)
-        {
-            searchParams.InitNextRowSetting();
+private void Search(TrieSearchParams searchParams)
+{
+    searchParams.InitNextRowSetting();
 
-            EditCost currentEditCost = new EditCost();
-            currentEditCost.CurrentNameChar = searchParams.CurrentNode.Char;
-            var minimumEditCost = searchParams.CurrentRow[0];
-            for (int i = 1; i < searchParams.PreviousRow.Length; i++)
-            {
-                currentEditCost.CurrentQueryChar = searchParams.QueryChars[i - 1];
-                currentEditCost.InsertCost = searchParams.CurrentRow[i - 1] + 1;
-                currentEditCost.DeletionCost = searchParams.PreviousRow[i] + 1;
-                currentEditCost.SubstituionCost = currentEditCost.CurrentQueryChar == currentEditCost.CurrentNameChar? searchParams.PreviousRow[i - 1] : searchParams.PreviousRow[i-1] + 1;
-                searchParams.CurrentRow[i] = currentEditCost.MinCost;
-                minimumEditCost = currentEditCost.MinCost < minimumEditCost ? currentEditCost.MinCost : minimumEditCost;
-            }
+    EditCost currentEditCost = new EditCost();
+    currentEditCost.CurrentNameChar = searchParams.CurrentNode.Char;
+    var minimumEditCost = searchParams.CurrentRow[0];
+    for (int i = 1; i < searchParams.PreviousRow.Length; i++)
+    {
+        currentEditCost.CurrentQueryChar = searchParams.QueryChars[i - 1];
 
-            if(searchParams.SimilarityDistance <= searchParams.MaxAllowedEditCost && searchParams.CurrentNode.EOW)
-                CollectCandidateMatches(searchParams);
+        var insertionUnitCost = EditCostMatrix.getInsertionProb(currentEditCost.PreviousNameChar, currentEditCost.CurrentNameChar);
+        var deletionUnitCost = EditCostMatrix.getDeletionProb(currentEditCost.PreviousQueryChar, currentEditCost.CurrentQueryChar);
+        var substituionUnitCost = EditCostMatrix.getSubstitutionProb(currentEditCost.CurrentQueryChar, currentEditCost.CurrentNameChar);
+         
+        currentEditCost.InsertCost = searchParams.CurrentRow[i - 1] + insertionUnitCost;
+        currentEditCost.DeletionCost = searchParams.PreviousRow[i] + deletionUnitCost;
+        currentEditCost.SubstituionCost = searchParams.PreviousRow[i-1] + substituionUnitCost;
+        searchParams.CurrentRow[i] = currentEditCost.MinCost;
+        minimumEditCost = currentEditCost.MinCost < minimumEditCost ? currentEditCost.MinCost : minimumEditCost;
+    }
+
+    if(searchParams.SimilarityDistance <= searchParams.MaxAllowedEditCost && searchParams.CurrentNode.EOW)
+        CollectCandidateMatches(searchParams);
             
-            if(minimumEditCost <= searchParams.MaxAllowedEditCost)
-            {
-                var currentNode = searchParams.CurrentNode;
-                foreach (var childChar in currentNode.Keys)
-                {
-                    searchParams.CurrentNode = currentNode[childChar];
-                    Search(searchParams);
-                }
-            }
+    if(minimumEditCost <= searchParams.MaxAllowedEditCost)
+    {
+        var currentNode = searchParams.CurrentNode;
+        searchParams.CurrentNameLength++;
+        searchParams.SetMaxEditCost((int) Math.Max(searchParams.CurrentNameLength, searchParams.QueryLength));
+        foreach (var childChar in currentNode.Keys)
+        {
+            searchParams.CurrentNode = currentNode[childChar];
+            Search(searchParams);
         }
+    }
+}
 
+        
         private void CollectCandidateMatches(TrieSearchParams searchParams)
         {
             foreach (var candidateTermId in searchParams.CurrentNode.TermIds)

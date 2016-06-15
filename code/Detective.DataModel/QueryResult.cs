@@ -12,6 +12,9 @@ namespace Detective.Api
     public class QueryResult
     {
         [DataMember]
+        public string Query;
+        
+        [DataMember]
         public SearchItem[] SearchItems;
         [DataMember]
         public int SearchItemCount;

@@ -23,6 +23,7 @@ namespace Detective.Index.Trie
 
         public static Dictionary<string, NameTerm> NameTermsByString = new Dictionary<string, NameTerm>();
         public static Dictionary<int, NameTerm> NameTerms = new Dictionary<int, NameTerm>();
+        public static Dictionary<int, Dictionary<int, List<NameTerm>>> AllNameTerms = new Dictionary<int, Dictionary<int, List<NameTerm>>>();
 
         public static NameTerm CreateNameTerm(string term)
         {
@@ -35,6 +36,22 @@ namespace Detective.Index.Trie
             NameTerms[nameTerm.Id] = nameTerm;
             NameTermsByString[term] = nameTerm;
             return nameTerm;
+        }
+
+        public static void AddNameTerm(int uid, int nameIndex, NameTerm nameTerm)
+        {
+            if(!AllNameTerms.ContainsKey(uid))
+                AllNameTerms[uid] = new Dictionary<int, List<NameTerm>>();
+
+            if(!AllNameTerms[uid].ContainsKey(nameIndex))
+                AllNameTerms[uid][nameIndex] = new List<NameTerm>();
+
+            AllNameTerms[uid][nameIndex].Add(nameTerm);
+        }
+
+        public static List<NameTerm> GetAllNameTerms(int uid, int nameIndex)
+        {
+            return AllNameTerms[uid][nameIndex];
         }
 
         private static TrieNode root;

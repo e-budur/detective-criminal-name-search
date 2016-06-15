@@ -8,6 +8,8 @@ namespace Detective.Query.Query
 {
     public class QueryTerm
     {
+        public int Index { get; set; }
+
         public string Term;
 
         public bool Equals(QueryTerm otherTerm)

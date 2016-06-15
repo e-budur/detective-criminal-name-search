@@ -52,11 +52,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>DetectiveSearch.Program</StartupObject>
+    <StartupObject>Detective.TestBed.TrieSearcherTest</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +76,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlackcheckEntitiesTest.cs" />
+    <Compile Include="ConfusionMatrixBuilderTest.cs" />
+    <Compile Include="DetailsTest.cs" />
     <Compile Include="IndexBuilderTest.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
@@ -73,6 +87,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Content Include="Assets\bigramMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\bigramProbMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\deletionMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\deletionProbMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\insertionMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\insertionProbMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\substitutionMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\substitutionProbMatrix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\unigram.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -87,9 +132,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Detective.Api\Detective.Api.csproj">
+      <Project>{8ddbe3ea-3eda-4004-a987-7007ec42d8b0}</Project>
+      <Name>Detective.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Detective.Commons\Detective.Commons.csproj">
+      <Project>{8cd23bb6-657a-494f-ae8d-d43883b75757}</Project>
+      <Name>Detective.Commons</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Detective.DataModel\Detective.DataModel.csproj">
       <Project>{c60b1fd6-6de6-496f-969f-502cc9fef6f4}</Project>
       <Name>Detective.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Detective.Data\Detective.Data.csproj">
+      <Project>{ca23aef7-4af7-4228-b8fb-79b96b050c0a}</Project>
+      <Name>Detective.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Detective.Feeder\Detective.Feeder.csproj">
+      <Project>{CCF11541-F428-4F3F-A50C-40F7E395C273}</Project>
+      <Name>Detective.Feeder</Name>
     </ProjectReference>
     <ProjectReference Include="..\Detective.Index\Detective.Index.csproj">
       <Project>{aa2ca242-b5af-434c-b52d-4f61e07cef4d}</Project>
@@ -108,6 +169,7 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

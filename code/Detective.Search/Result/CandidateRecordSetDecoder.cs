@@ -26,7 +26,8 @@ namespace Detective.Query.Result
                 foreach (var name in record.Value)
                 {
                     var fullname = SQLDB.GetName(record.Key, name.Key);
-                    var searchItem = new SearchItem() { Uid = record.Key, NameIndex = name.Key, Fullname = fullname };
+                    var sdnItem = SQLDB.GetSDN(record.Key);
+                    var searchItem = new SearchItem() { Uid = record.Key, NameIndex = name.Key, Fullname = fullname, SDN = sdnItem };
                     searchItems.Add(searchItem);
                 }
             }

@@ -1,36 +1,56 @@
-﻿using Detective.DataModel;
+﻿using Detective.Data;
+using Detective.Feeder;
 using Detective.Index.Trie;
 using Detective.Query;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
+using System.Diagnostics;
+using EntityFramework.BulkInsert.Extensions;
+using System.Data;
+using System.Threading.Tasks;
+using System.Threading;
+using Detective.Commons.Utils;
+using Detective.DataModel;
+using Detective.Index;
 
 namespace Detective.Api
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
     public class DetectiveNameSearch : INameSearch
     {
+
         public DetectiveNameSearch()
         {
-            Index();
+            
         }
+
+        
         public void Index()
         {
-            string[] lines = System.IO.File.ReadAllLines(AppDomain.CurrentDomain.BaseDirectory+@"Data\sdn_parsed_data.txt");
-
             var indexer = new TrieIndexer();
-            
-            foreach (var line in lines)
+            SDNFileReader sdnFileReader = new SDNFileReader("https://www.treasury.gov/ofac/downloads/sdn.xml");
+            int i = 0;
+            foreach (var item in sdnFileReader.ReadSDNItem())
             {
-                var cols = line.Split("|".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-                int uid = int.Parse(cols[0]);
-                string name = cols[1];
-                indexer.Index(uid, name);
+                var uid = item.uid;
+                var fullname = item.first_name + " " + item.last_name;
+                i++;
+                indexer.Index(uid, fullname);
+
+                foreach (var aka in item.AkaList)
+                {
+                    fullname = aka.first_name + " " + aka.last_name;
+                    Console.WriteLine(string.Format("{0}-{1} {2}", uid, aka.first_name, aka.last_name));
+                    indexer.Index(uid, fullname);
+                }
+
             }
+            
+            Console.WriteLine("SDNCount : " + i);
+            indexer.Complete();
         }
+
+        
 
         public QueryResult Query(QueryRequest query)
         {
@@ -39,15 +59,27 @@ namespace Detective.Api
 
         public QueryResult Query(string query)
         {
+            Logger.WriteInfo("Query:" + query);
             Finder finder = new Finder();
 
             var candidateSearchResult = finder.Query(query);
-            foreach (var searchItem in candidateSearchResult.SearchItems)
-            {
-                Console.WriteLine(searchItem.Uid + "-" + searchItem.NameIndex + "  " + searchItem.Fullname);
-            }
-            
+
+            Logger.WriteInfo("SearchTime:" + candidateSearchResult.SearchTime);
+
+            candidateSearchResult.Query = query;
+
             return candidateSearchResult;
         }
+
+        public QueryResult GetDetails(string uidStr)
+        {
+            Finder finder = new Finder();
+
+            int uid = int.Parse(uidStr);
+            var candidateSearchResult = finder.GetDetails(uid);
+
+            return candidateSearchResult;
+        }
+        
     }
 }

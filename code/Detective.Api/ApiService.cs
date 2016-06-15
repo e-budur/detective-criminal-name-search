@@ -1,5 +1,4 @@
-﻿using NLog;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +8,10 @@ using System.ServiceModel;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using Detective.Data;
+using Detective.Index.Trie;
+using Detective.Commons.Utils;
+using Detective.Search.Algorithms;
 
 namespace Detective.Api
 {
@@ -20,21 +23,39 @@ namespace Detective.Api
             InitializeComponent();
         }
 
+        protected void OnInit()
+        {
+            Logger.WriteInfo("inititializing index");
+            TrieIndexer.Index();
+            Logger.WriteInfo("inititialized index");
+
+            Logger.WriteInfo("reloading db");
+            //SQLDB.ReloadDbTask();
+            Logger.WriteInfo("reloaded db");
+
+            Logger.WriteInfo("reloading cost matrix");
+            EditCostMatrix.Build();
+            Logger.WriteInfo("reloaded cost matrix");
+
+        }
         protected override void OnStart(string[] args)
         {
-            if (host != null)
-                host.Close();
-            Logger logger = LogManager.GetLogger("MyClassName");
-            logger.Info("Onstart");
+            host?.Close();
+
+            Logger.WriteInfo("Onstart");
+            OnInit();
+
+            Logger.WriteInfo("Starting WCF service");
+
             host = new ServiceHost(typeof(DetectiveNameSearch));
             host.Open();
-            logger.Info("Onstart end");
-            // TODO: Add code here to start your service.
+            Logger.WriteInfo("Started WCF service");
         }
 
         protected override void OnStop()
         {
-            // TODO: Add code here to perform any tear-down necessary to stop your service.
+            if(host != null && host.State != CommunicationState.Closed)
+                host.Close();
         }
     }
 }

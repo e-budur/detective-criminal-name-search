@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -46,8 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseItem.cs" />
+    <Compile Include="AddressItem.cs" />
+    <Compile Include="NationalityItem.cs" />
+    <Compile Include="CitizenshipItem.cs" />
+    <Compile Include="DateOfBirthItem.cs" />
+    <Compile Include="PlaceOfBirthItem.cs" />
+    <Compile Include="VesselInfoItem.cs" />
+    <Compile Include="AkaItem.cs" />
+    <Compile Include="IDItem.cs" />
+    <Compile Include="ProgramItem.cs" />
     <Compile Include="QueryRequest.cs" />
     <Compile Include="QueryResult.cs" />
+    <Compile Include="SDNItem.cs" />
     <Compile Include="SearchItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

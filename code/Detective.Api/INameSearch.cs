@@ -18,6 +18,10 @@ namespace Detective.Api
         [OperationContract]
         [WebGet(UriTemplate="search/{query}", ResponseFormat = WebMessageFormat.Json, BodyStyle =WebMessageBodyStyle.Bare)]
         QueryResult Query(string query);
+
+        [OperationContract]
+        [WebGet(UriTemplate = "details/{id}", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare)]
+        QueryResult GetDetails(string id);
         // TODO: Add your service operations here
     }
 }

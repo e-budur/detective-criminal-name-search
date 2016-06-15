@@ -16,6 +16,12 @@ namespace Detective.Query.Result
         public double NameIndex;
         public double EditDistance;
         public int MaxEditDistance;
+
+        public double Similarity
+        {
+            get { return 1-EditDistance*1.0/MaxEditDistance; }
+        }
+
         public CandidateMatchTerm(QueryTerm queryTerm, NameTerm nameTerm, double editDistance)
         {
             this.QueryTerm = queryTerm;

@@ -8,6 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Detective.Api;
+using Detective.Query.Searchers;
+using Detective.Search.Algorithms;
 
 namespace Detective.TestBed
 {
@@ -15,32 +18,24 @@ namespace Detective.TestBed
     {
         public static void Main(string[] args)
         {
-            IIndexer indexer = new TrieIndexer();
-            
-            string[] lines = System.IO.File.ReadAllLines(@"Data\sdn_parsed_data.txt");
-
-            int count = 100;
-            foreach (var line in lines)
-            {
-                var cols = line.Split("|".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-                int uid = int.Parse(cols[0]);
-                string name = cols[1];
-                indexer.Index(uid, name);
-                count--;
-                if (count == 0)
-                    break;
-            }
+            EditCostMatrix.Build();
+            TrieIndexer.Index();
             
             Finder finder = new Finder();
 
             while (true)
             {
+                int i = 0;
+
                 Console.Write("Query:");
                 var query = Console.ReadLine();
                 var candidateSearchResult = finder.Query(query);
                 foreach (var searchItem in candidateSearchResult.SearchItems)
                 {
-                    Console.WriteLine(searchItem.Uid+ "-"+ searchItem.NameIndex+"  "+ searchItem.Fullname);
+                    Console.WriteLine(searchItem.Uid+ "-"+ searchItem.Score+"  "+ searchItem.Fullname);
+                    i++;
+                    if (i > 30)
+                        break;
                 }
 
                 Console.WriteLine();

@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.3\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,10 +61,21 @@
       <Project>{8cd23bb6-657a-494f-ae8d-d43883b75757}</Project>
       <Name>Detective.Commons</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Detective.DataModel\Detective.DataModel.csproj">
+      <Project>{c60b1fd6-6de6-496f-969f-502cc9fef6f4}</Project>
+      <Name>Detective.DataModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Detective.Data\Detective.Data.csproj">
       <Project>{ca23aef7-4af7-4228-b8fb-79b96b050c0a}</Project>
       <Name>Detective.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Detective.Feeder\Detective.Feeder.csproj">
+      <Project>{CCF11541-F428-4F3F-A50C-40F7E395C273}</Project>
+      <Name>Detective.Feeder</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

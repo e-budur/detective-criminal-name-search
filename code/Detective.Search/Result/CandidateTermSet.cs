@@ -12,8 +12,10 @@ namespace Detective.Query.Result
 {
     public class CandidateTermSet : Collection<CandidateMatchTerm>
     {
-        private Dictionary<string, QueryTerm> QueryTerms = new Dictionary<string, QueryTerm>();
-        private Dictionary<int, NameTerm> NameTerms = new Dictionary<int, NameTerm>();
+        public Dictionary<string, QueryTerm> QueryTerms = new Dictionary<string, QueryTerm>();
+        public Dictionary<int, NameTerm> NameTerms = new Dictionary<int, NameTerm>();
+        public int Support { get; set; }
+        public bool IsFrequent { get; set; }
 
         public void Merge(CandidateTermSet candidateTermSet)
         {

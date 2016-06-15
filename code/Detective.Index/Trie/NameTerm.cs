@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 namespace Detective.Index.Trie
 {
     public class NameTerm
-    {
+    {   
         public int Id { get; set; }
+
+        public int Tf { get; set; }
+
+        public double Idf { get; set; }
+
+        public int DocFrequency { get; set; }
 
         public int Index { get; set; }
         public string Term { get; set; }
@@ -21,6 +27,9 @@ namespace Detective.Index.Trie
         {
             var posting = new NameTermPosting() { Uid = uid, NameIndex = nameIndex, SequenceNum = sequenceNum };
             this.PostingList.Add(posting);
+            this.Tf++;
+
+            AddRecordId(uid);
         }
 
         public void AddRecordId(int recordId)
@@ -29,6 +38,8 @@ namespace Detective.Index.Trie
                 return;
 
             this.RecordIds.Add(recordId);
+
+            this.DocFrequency++;
         }
 
         public override int GetHashCode()
